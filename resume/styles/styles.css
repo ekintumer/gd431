@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* utility-class */
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-margin--section {
+  margin-bottom: 3.5em;
+}
+
+.u-margin--delete {
+  margin-top: 0;
+}
+
+.u-margin--bottom {
+  margin-bottom: 1.5em;
+}
+
+body {
+  font-family: Open Sans;
+  font-weight: 400;
+  margin-left: 2em;
+  margin-right: 2em;
+  letter-spacing: .03em;
+  line-height: .5em;
+}
+
+h1,
+h2 {
+  font-family: Open Sans Condensed;
+}
+
+/* ekin tumer */
+h1 {
+  font-size: 3.5em;
+  line-height: 1.2em;
+}
+
+/* names-places,schools */
+h3 {
+  font-size: .9em;
+  font-weight: 600;
+}
+
+/* all dates */
+h4 {
+  font-size: .7em;
+  font-weight: 400;
+}
+
+/* location-job title */
+h5 {
+  font-style: italic;
+  font-weight: 400;
+}
+
+h5::before {
+  content: "–";
+}
+
+/* all the descriptions */
+ul li {
+  color: #606060;
+  font-size: .7em;
+  line-height: 18px;
+  list-style-type: none;
+  margin-left: -3.5em;
+}
+
+ul {
+  margin-top: -.6em;
+}
+
+/* contact info */
+footer ul li {
+  color: #929292;
+}
+
+hr {
+  color: #929292;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=styles.css.map */
