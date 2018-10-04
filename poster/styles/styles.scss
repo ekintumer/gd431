@@ -1,5 +1,5 @@
-.u-text_main {
-    font-size: .7rem;
+.u-text_details {
+    font-size: .5rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -17,7 +17,7 @@ body {
     font-size: 5rem;
     grid-column: 1 / 3;
     grid-row: 1 / 3;
-    background: #9E9E9E;
+    // background: #9E9E9E;
 }
 
 .texture {
@@ -65,19 +65,19 @@ body {
 .primary-details {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
-    background: #E0E0E0;
+    // background: #E0E0E0;
 }
 
 .secondary-details {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
-    background: #7E7E7E;
+    // background: #7E7E7E;
 }
 
 .tertiary-details {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
-    background: #9E9E9E;
+    // background: #9E9E9E;
 }
 
 .remove-list {
