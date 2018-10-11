@@ -216,42 +216,78 @@ body {
 .shape {
   position: absolute;
   z-index: 9000;
-  height: auto;
 }
 
 .shape--blue {
-  bottom: 100px;
-  left: 900px;
+  bottom: 120px;
+  left: 920px;
   height: auto;
-  width: 35%;
+  width: 15%;
 }
 
 .shape--red {
-  bottom: 20vw;
-  right: 75vw;
+  bottom: 320px;
+  right: 950px;
   height: auto;
-  width: 40%;
+  width: 15%;
 }
 
 .shape--purple {
-  top: 50vw;
-  left: 32vw;
+  top: 850px;
+  left: 450px;
   height: auto;
-  width: 35%;
+  width: 12%;
 }
 
 .shape--green {
-  bottom: 50vw;
-  left: 40vw;
+  bottom: 760px;
+  left: 650px;
   height: auto;
-  width: 40%;
+  width: 12%;
 }
 
 .shape--yellow {
-  bottom: 30vw;
-  left: 35vw;
+  bottom: 450px;
+  left: 450px;
   height: auto;
-  width: 35%;
+  width: 20%;
+}
+
+@media screen and (max-width: 1075px) {
+  .shape {
+    position: absolute;
+    z-index: 9000;
+  }
+  .shape--blue {
+    bottom: 420px;
+    left: 450px;
+    height: auto;
+    width: 15%;
+  }
+  .shape--red {
+    bottom: 150px;
+    right: 40px;
+    height: auto;
+    width: 15%;
+  }
+  .shape--purple {
+    top: 100px;
+    left: 520px;
+    height: auto;
+    width: 12%;
+  }
+  .shape--green {
+    bottom: 50px;
+    left: 350px;
+    height: auto;
+    width: 12%;
+  }
+  .shape--yellow {
+    bottom: 300px;
+    left: 120px;
+    height: auto;
+    width: 20%;
+  }
 }
 
 @media screen and (max-width: 766px) {
@@ -362,6 +398,37 @@ body {
     -ms-grid-row-span: 1;
     grid-row: 5 / 6;
   }
+  .shape {
+    position: absolute;
+    z-index: 9000;
+  }
+  .shape--blue {
+    bottom: 900px;
+    left: 470px;
+    height: auto;
+    width: 20%;
+  }
+  .shape--red {
+    bottom: 570px;
+    right: 320px;
+    height: auto;
+    width: 20%;
+  }
+  .shape--purple {
+    display: none;
+  }
+  .shape--green {
+    bottom: 220px;
+    left: 50px;
+    height: auto;
+    width: 15%;
+  }
+  .shape--yellow {
+    bottom: 220px;
+    left: 320px;
+    height: auto;
+    width: 25%;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -467,6 +534,34 @@ body {
     -ms-grid-row: 5;
     -ms-grid-row-span: 1;
     grid-row: 5 / 6;
+  }
+  .shape {
+    position: absolute;
+    z-index: 9000;
+  }
+  .shape--blue {
+    display: none;
+  }
+  .shape--red {
+    bottom: 850px;
+    right: 260px;
+    height: auto;
+    width: 25%;
+  }
+  .shape--purple {
+    display: none;
+  }
+  .shape--green {
+    bottom: 180px;
+    left: 250px;
+    height: auto;
+    width: 20%;
+  }
+  .shape--yellow {
+    bottom: 580px;
+    left: 250px;
+    height: auto;
+    width: 32%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
