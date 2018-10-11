@@ -152,6 +152,20 @@ body {
     flex: 1;
 }
 
+// shapes // 
+
+.shapes {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 9000;
+}
+
+.blue_shape {
+    bottom: 300px;
+}
+
 // media query 1 //
 
 @media screen and (max-width: 766px) {

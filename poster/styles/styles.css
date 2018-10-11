@@ -212,6 +212,18 @@ body {
           flex: 1;
 }
 
+.shapes {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 9000;
+}
+
+.blue_shape {
+  bottom: 300px;
+}
+
 @media screen and (max-width: 766px) {
   body {
     -ms-grid-columns: (33.3%)[3];
