@@ -1,0 +1,26 @@
+.body {
+  font-family: 'Lato', sans-serif;
+}
+
+.footer {
+  background: #212121;
+}
+
+.footer--title {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.07px;
+}
+
+.menu--text {
+  font-size: 15px;
+  color: #FFFFFF;
+  letter-spacing: 1.07px;
+  line-height: 31px;
+}
+
+.u-bold {
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.css.map */
