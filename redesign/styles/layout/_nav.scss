@@ -1,8 +1,14 @@
 .menu {
-    display: grid;
 
     &--button {
         @include size (104px, 116px);
+        background: #981E32;
+        position: absolute;
+    }
+
+    &--text {
+        display: flex;
+        height: 80px;
         background: #981E32;
     }
 

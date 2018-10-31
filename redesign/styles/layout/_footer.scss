@@ -2,3 +2,13 @@ footer {
     background: #212121;
     height: 390px;
 }
+
+img.logo {
+    &--warnock {
+        height: 50%;
+    }
+
+    &--advocates {
+        height: 50%;
+    }
+}
