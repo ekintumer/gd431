@@ -1,14 +1,41 @@
 footer {
-    background: #212121;
     height: 390px;
+
+}
+
+.icon {
+    display: flex;
+
+    &--facebook {
+        height: 100%;
+        margin-left: 5px;
+        margin-right: 25px;
+    }
+
+    &--youtube {
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    &--linkedin {
+        height: 100%;
+        margin-right: 25px;
+    }
+
+    &--tumblr {
+        height: 100%;
+    }
 }
 
 img.logo {
+
     &--warnock {
-        height: 50%;
+        height: 10%;
+        margin-left: 35px;
     }
 
     &--advocates {
-        height: 50%;
+        height: 10%;
+        margin-left: 25px;
     }
 }

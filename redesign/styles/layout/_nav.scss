@@ -1,15 +1,13 @@
 .menu {
 
     &--button {
-        @include size (104px, 116px);
-        background: #981E32;
+        @include size(104px, 116px);
         position: absolute;
     }
 
     &--text {
         display: flex;
         height: 80px;
-        background: #981E32;
     }
 
 }

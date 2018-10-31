@@ -1,5 +1,6 @@
 .footer {
     color: #FFFFFF;
+    background: #212121;
 
     &--title {
         font-size: .9rem;
@@ -18,9 +19,16 @@
 
 .menu {
 
+    &--button {
+        @include size(104px, 116px);
+        position: fixed;
+        z-index: 99;
+    }
+
     &--text {
-        font-size: .9rem;
+        background: #981E32;
         color: #FFFFFF;
+        font-size: .9rem;
         letter-spacing: 1.07px;
         line-height: 31px;
     }
