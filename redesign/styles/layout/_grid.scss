@@ -5,6 +5,10 @@
         // grid-template-rows: repeat(6, 1fr);
     }
 
+    header {
+        grid-column: 1 / 4;
+    }
+
     .main {
         grid-column: 1 /4;
     }

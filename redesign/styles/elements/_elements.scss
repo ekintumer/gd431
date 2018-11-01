@@ -24,24 +24,33 @@
         letter-spacing: 0.93px;
         line-height: 26px;
     }
+
+    &--header {
+        font-size: 1.2rem;
+        color: #212121;
+        letter-spacing: 1px;
+        line-height: 31px;
+        margin-top: 50px;
+    }
 }
 
 .menu {
 
     &--button {
-        @include size(104px, 116px);
+        @include size(104px, 114px);
         background: #981E32;
-        z-index: 99;
+        z-index: 110;
     }
 
-    &--list {
-        background: #981E32;
+    &--text {
+        background-color: #981E32;
         color: #FFFFFF;
         font-size: .9rem;
         letter-spacing: 1.07px;
-        line-height: 31px;
+        line-height: 75px;
+        text-indent: 40px;
+        text-align: left;
     }
-
 }
 
 .main {

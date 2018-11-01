@@ -16,7 +16,7 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
-  position: absolute;
+  position: relative;
 }
 
 body {
@@ -25,6 +25,12 @@ body {
   max-width: 1205px;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+header {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
 }
 
 .main {
@@ -67,42 +73,63 @@ img.logo {
 }
 
 .logo--expunge {
-  position: fixed;
-  margin-left: 35px;
-  margin-top: 17px;
+  margin-left: 25px;
+  margin-top: 25px;
   z-index: 100;
-  top: 10px;
+  position: fixed;
 }
 
-.image--main {
-  position: fixed;
-  top: -10px;
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  background-image: url("/redesign/images/image--main.svg");
+  height: 200px;
+  background-repeat: no-repeat;
+  top: -80px;
 }
 
 .menu {
   z-index: 110;
-  position: relative;
 }
 
 .menu--button {
-  height: 116px;
-  width: 104px;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.menu--text {
+  width: 320px;
+  height: 75px;
+  margin-bottom: 1.2px;
+  text-align: left;
 }
 
 .menu--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  height: 80px;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu--closed {
+  padding: 30px;
+  margin-top: 10px;
 }
 
 footer {
-  height: 390px;
+  height: 380px;
+  width: auto;
 }
 
 .icon {
@@ -167,19 +194,29 @@ img.logo--advocates {
   line-height: 26px;
 }
 
-.menu--button {
-  height: 116px;
-  width: 104px;
-  background: #981E32;
-  z-index: 99;
+.text--header {
+  font-size: 1.2rem;
+  color: #212121;
+  letter-spacing: 1px;
+  line-height: 31px;
+  margin-top: 50px;
 }
 
-.menu--list {
+.menu--button {
+  height: 114px;
+  width: 104px;
   background: #981E32;
+  z-index: 110;
+}
+
+.menu--text {
+  background-color: #981E32;
   color: #FFFFFF;
   font-size: .9rem;
   letter-spacing: 1.07px;
-  line-height: 31px;
+  line-height: 75px;
+  text-indent: 40px;
+  text-align: left;
 }
 
 .main {

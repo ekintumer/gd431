@@ -1,16 +1,29 @@
 .menu {
     z-index: 110;
-    position: relative;
 
     &--button {
-        @include size(104px, 116px);
-        position: fixed;
+        position: sticky;
+        top: 0;
+    }
+
+    &--text {
+        width: 320px;
+        height: 75px;
+        margin-bottom: 1.2px;
+        text-align: left;
     }
 
     &--list {
         display: flex;
-        flex-direction: row;
-        height: 80px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-end;
+        list-style-type: none;
+        margin: 0;
     }
 
+    &--closed {
+        padding: 30px;
+        margin-top: 10px;
+    }
 }

@@ -1,16 +1,15 @@
 .logo--expunge {
-    position: fixed;
-    margin-left: 35px;
-    margin-top: 17px;
+    margin-left: 25px;
+    margin-top: 25px;
     z-index: 100;
-    top: 10px;
-    // position: sticky;
-    // top: 17px;
+    position: fixed;
 
 }
 
-.image--main {
-    position: fixed;
-    // position: sticky;
-    top: -10px;
+.sticky {
+    position: sticky;
+    background-image: url('/redesign/images/image--main.svg');
+    height: 200px;
+    background-repeat: no-repeat;
+    top: -80px;
 }
