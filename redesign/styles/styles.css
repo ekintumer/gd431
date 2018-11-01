@@ -16,6 +16,7 @@
 body {
   font-family: 'Lato', sans-serif;
   margin: 0;
+  position: absolute;
 }
 
 body {
@@ -53,16 +54,16 @@ img.logo {
   grid-row: 1 / 2;
 }
 
-.image--main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
-}
-
 .menu--button {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3 / 4;
+}
+
+.image--main {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / 4;
 }
 
 .logo--expunge {
@@ -70,22 +71,33 @@ img.logo {
   margin-left: 35px;
   margin-top: 17px;
   z-index: 100;
+  top: 10px;
 }
 
 .image--main {
   position: fixed;
+  top: -10px;
+}
+
+.menu {
+  z-index: 110;
+  position: relative;
 }
 
 .menu--button {
   height: 116px;
   width: 104px;
-  position: absolute;
+  position: fixed;
 }
 
-.menu--text {
+.menu--list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 80px;
 }
 
@@ -148,18 +160,42 @@ img.logo--advocates {
   opacity: 0.7;
 }
 
+.text--main {
+  font-size: 13px;
+  color: #212121;
+  letter-spacing: 0.93px;
+  line-height: 26px;
+}
+
 .menu--button {
   height: 116px;
   width: 104px;
-  position: fixed;
+  background: #981E32;
   z-index: 99;
 }
 
-.menu--text {
+.menu--list {
   background: #981E32;
   color: #FFFFFF;
   font-size: .9rem;
   letter-spacing: 1.07px;
   line-height: 31px;
+}
+
+.main {
+  margin-bottom: 40px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+}
+
+.icon:hover {
+  opacity: 50%;
 }
 /*# sourceMappingURL=styles.css.map */

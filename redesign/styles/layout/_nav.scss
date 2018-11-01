@@ -1,12 +1,15 @@
 .menu {
+    z-index: 110;
+    position: relative;
 
     &--button {
         @include size(104px, 116px);
-        position: absolute;
+        position: fixed;
     }
 
-    &--text {
+    &--list {
         display: flex;
+        flex-direction: row;
         height: 80px;
     }
 

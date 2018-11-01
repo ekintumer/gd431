@@ -17,15 +17,24 @@
     }
 }
 
+.text {
+    &--main {
+        font-size: 13px;
+        color: #212121;
+        letter-spacing: 0.93px;
+        line-height: 26px;
+    }
+}
+
 .menu {
 
     &--button {
         @include size(104px, 116px);
-        position: fixed;
+        background: #981E32;
         z-index: 99;
     }
 
-    &--text {
+    &--list {
         background: #981E32;
         color: #FFFFFF;
         font-size: .9rem;
@@ -33,4 +42,21 @@
         line-height: 31px;
     }
 
+}
+
+.main {
+    margin-bottom: 40px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gray;
+}
+
+.icon:hover {
+    opacity: 50%;
 }
