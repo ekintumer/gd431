@@ -24,7 +24,7 @@ body {
   display: grid;
   max-width: 1205px;
   -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 header {
@@ -82,7 +82,7 @@ img.logo {
 .sticky {
   position: -webkit-sticky;
   position: sticky;
-  background-image: url("/redesign/images/image--main.svg");
+  background-image: url("/images/image--main.svg");
   height: 200px;
   background-repeat: no-repeat;
   top: -80px;
@@ -110,14 +110,14 @@ img.logo {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   list-style-type: none;
   margin: 0;
 }
@@ -235,4 +235,5 @@ a:hover {
 .icon:hover {
   opacity: 50%;
 }
+
 /*# sourceMappingURL=styles.css.map */
