@@ -23,7 +23,7 @@ footer {
         margin-right: 25px;
     }
 
-    &--tumblr {
+    &--twitter {
         height: 100%;
     }
 }
@@ -31,12 +31,14 @@ footer {
 img.logo {
 
     &--warnock {
-        height: 10%;
+        height: 35px;
+        width: auto;
+        margin-bottom: 5px;
         margin-left: 35px;
     }
 
     &--advocates {
-        height: 10%;
+        height: 45px;
         margin-left: 25px;
     }
 }

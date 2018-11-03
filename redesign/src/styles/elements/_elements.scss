@@ -34,24 +34,24 @@
     }
 }
 
-.menu {
+// .menu {
 
-    &--button {
-        @include size(104px, 114px);
-        background: #981E32;
-        z-index: 110;
-    }
+//     &__button {
+//         @include size(104px, 114px);
+//         background: #981E32;
+//         z-index: 110;
+//     }
 
-    &--text {
-        background-color: #981E32;
-        color: #FFFFFF;
-        font-size: .9rem;
-        letter-spacing: 1.07px;
-        line-height: 75px;
-        text-indent: 40px;
-        text-align: left;
-    }
-}
+//     &__text {
+//         background-color: #981E32;
+//         color: #FFFFFF;
+//         font-size: .9rem;
+//         letter-spacing: 1.07px;
+//         line-height: 75px;
+//         text-indent: 40px;
+//         text-align: left;
+//     }
+// }
 
 .main {
     margin-bottom: 40px;
@@ -64,8 +64,4 @@ a {
 
 a:hover {
     color: gray;
-}
-
-.icon:hover {
-    opacity: 50%;
 }

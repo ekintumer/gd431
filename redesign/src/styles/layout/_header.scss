@@ -8,8 +8,9 @@
 
 .sticky {
     position: sticky;
-    background-image: url('/redesign/images/image--main.svg');
+    background-image: url('/redesign/src/images/image--main.svg');
     height: 200px;
+    width: 100%;
     background-repeat: no-repeat;
     top: -80px;
 }
