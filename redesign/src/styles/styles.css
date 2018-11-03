@@ -28,6 +28,7 @@ body {
   font-family: 'Lato', sans-serif;
   margin: 0;
   position: relative;
+  height: 100vh;
 }
 
 html {
@@ -114,6 +115,21 @@ img.logo {
   width: 100%;
   background-repeat: no-repeat;
   top: -80px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .main {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+    max-width: 600px;
+  }
+  .text--main {
+    margin-bottom: 30px;
+  }
 }
 
 footer {
@@ -205,17 +221,16 @@ img.logo--advocates {
 }
 
 .text--main {
-  font-size: 13px;
+  font-size: .8rem;
   color: #212121;
-  letter-spacing: 0.93px;
-  line-height: 26px;
+  letter-spacing: 0.08rem;
+  line-height: 1.5rem;
 }
 
 .text--header {
   font-size: 1.2rem;
   color: #212121;
-  letter-spacing: 1px;
-  line-height: 31px;
+  letter-spacing: 0.08rem;
   margin-top: 50px;
 }
 
