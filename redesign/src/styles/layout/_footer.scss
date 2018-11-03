@@ -1,7 +1,6 @@
 footer {
     height: 380px;
     width: auto;
-
 }
 
 .icon {
@@ -40,5 +39,27 @@ img.logo {
     &--advocates {
         height: 45px;
         margin-left: 25px;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 990px) {
+    footer {
+        height: 130px;
+        width: auto;
+        bottom: 0;
+        justify-content: space-between;
+    }
+
+    .sponsors {
+        margin-right: 30px;
     }
 }
