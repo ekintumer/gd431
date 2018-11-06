@@ -1,152 +1,160 @@
-// $show-nav: 800px;
+$show-nav: 800px;
 
-// [data-visible="false"] {
-//     display: none;
-// }
+[data-visible="false"] {
+    display: none;
+}
+
+.nav-wrapper {
+    position: absolute;
+    z-index: 101;
+}
+
+.navigation {
+    position: relative;
+}
+
+.menu {
+    &--button {
+        position: fixed;
+        left: 220px;
+        top: 0;
 
 
-// .navigation {
-//     position: relative;
-// }
+        &[aria-expanded="true"] {
+            .menu-icon--line {
+                $yValue: 18px;
+                $deg: 45deg;
 
-// .menu {
-//     &__button {
-//         position: absolute;
-//         top: -15px;
-//         right: -10px;
+                &:nth-child(1) {
+                    transform: translateY($yValue) rotate($deg);
+                }
 
-//         &[aria-expanded="true"] {
-//             .menu-icon__line {
-//                 $yValue: 18px;
-//                 $deg: 45deg;
+                &:nth-child(2) {
+                    opacity: 0;
+                }
 
-//                 &:nth-child(1) {
-//                     transform: translateY($yValue) rotate($deg);
-//                 }
+                &:nth-child(3) {
+                    transform: translateY(-$yValue) rotate(-$deg);
+                }
+            }
+        }
 
-//                 &:nth-child(2) {
-//                     opacity: 0;
-//                 }
+        @media screen and (min-width: $show-nav) {
+            display: none;
+        }
+    }
 
-//                 &:nth-child(3) {
-//                     transform: translateY(-$yValue) rotate(-$deg);
-//                 }
-//             }
-//         }
+    &--list {
+        @media screen and (max-width: ($show-nav - 1px)) {
+            flex-direction: column;
+            align-items: flex-end;
+            height: 0;
+            position: fixed;
+            top: 114px;
+            right: 0;
+            left: 0;
+            padding: 0;
+            width: 100vw;
 
-//         @media screen and (min-width: $show-nav) {
-//             display: none;
-//         }
-//     }
+            &[data-visible="true"] {
+                animation: expand 0.3s ease-in-out forwards;
+                display: flex;
+            }
+        }
 
-//     &__list {
-//         @media screen and (max-width: ($show-nav - 1px)) {
-//             flex-direction: column;
-//             align-items: flex-end;
-//             height: 0;
-//             position: absolute;
-//             top: 83px;
-//             right: 0;
-//             left: 0;
-//             padding: 0;
-//             width: 100vw;
+        @media screen and (min-width: $show-nav) {
+            display: flex !important;
+        }
+    }
 
-//             &[data-visible="true"] {
-//                 animation: expand 0.3s ease-in-out forwards;
-//                 display: flex;
-//             }
-//         }
+    &--text {
+        background: #981E32;
+        display: flex;
+        flex: 1 0 auto;
+        text-indent: 40px;
+        line-height: 75px;
+        margin-bottom: 1px;
+        width: 320px;
+        height: 75px;
 
-//         @media screen and (min-width: $show-nav) {
-//             display: flex !important;
-//         }
-//     }
+        @media screen and (max-width: ($show-nav - 1px)) {
+            justify-content: left;
+        }
+    }
 
-//     &__text {
-//         background: #981E32;
-//         display: flex;
-//         flex: 1 0 auto;
-//         text-indent: 40px;
-//         line-height: 75px;
-//         margin-bottom: 1px;
-//         width: 320px;
-//         height: 75px;
+    @keyframes expand {
+        from {
+            height: 0;
+            opacity: 0;
+        }
 
-//         @media screen and (max-width: ($show-nav - 1px)) {
-//             justify-content: left;
-//         }
-//     }
+        to {
+            height: 375px;
+            opacity: 1;
+        }
+    }
+}
 
-//     @keyframes expand {
-//         from {
-//             height: 0;
-//             opacity: 0;
-//         }
+.menu-icon {
+    &--line {
+        background-color: white;
+        height: 3px;
+        margin: 10px auto 15px;
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+    }
+}
 
-//         to {
-//             height: 375px;
-//             opacity: 1;
-//         }
-//     }
-// }
+a.link {
+    color: #FFFFFF;
+    text-decoration: none;
 
-// .menu-icon {
-//     &__line {
-//         background-color: white;
-//         height: 3px;
-//         margin: 10px auto 15px;
-//         transition: all 0.3s ease-in-out;
-//         width: 40px;
-//     }
-// }
+    &:active {
+        color: $black;
+        font-style: italic;
+    }
+}
 
-// a {
-//     color: #FFFFFF;
-//     text-decoration: none;
+.menu {
+    &--button {
+        color: #FFFFFF;
+        background: $red;
+        width: 104px;
+        height: 114px;
 
-//     &:active {
-//         color: #FFFFFF;
-//         background: #000000;
-//         font-style: italic;
-//     }
-// }
+        &[aria-expanded="true"] {
+            background: $yellow;
+            transition: background 0.3s ease-in-out;
+        }
+    }
 
-// .menu {
-//     &__button {
-//         color: #FFFFFF;
-//         background: #981E32;
-//         width: 104px;
-//         height: 114px;
+    &--list {
+        @media screen and (max-width: ($show-nav - 1px)) {
+            background-color: #ffffff;
+        }
 
-//         &[aria-expanded="true"] {
-//             background: #EAAB00;
-//             transition: background 0.3s ease-in-out;
-//         }
-//     }
+        &:active {
+            background: #FFFFFF;
+        }
+    }
 
-//     &__list {
-//         @media screen and (max-width: ($show-nav - 1px)) {
-//             background-color: #ffffff;
-//         }
-//     }
+    &--text {
+        >a {
+            width: 320px;
+            transition: background 0.3s ease-in-out;
 
-//     &__text {
-//         >a {
-//             width: 320px;
-//             transition: background 0.3s ease-in-out;
+            &:hover {
+                background: $red;
+            }
 
-//             &:hover {
-//                 background: #791727;
-//             }
+            @media screen and (max-width: ($show-nav - 1px)) {
+                font-size: .9rem;
+            }
 
-//             @media screen and (max-width: ($show-nav - 1px)) {
-//                 font-size: .9rem;
-//             }
-
-//             @media screen and (min-width: $show-nav) {}
-//         }
-//     }
-// }
+            @media screen and (min-width: $show-nav) {}
+        }
+    }
+}
 
 // // // Variables
 

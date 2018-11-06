@@ -15,6 +15,14 @@
     top: -80px;
 }
 
+@media only screen and (min-width: 1440px) {
+    .sticky {
+        height: 120px;
+        background-position-y: -300px;
+
+    }
+}
+
 @media only screen and (min-width: 900px) {
     .sticky {
         height: 120px;
