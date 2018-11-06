@@ -144,7 +144,8 @@ a.link {
             transition: background 0.3s ease-in-out;
 
             &:hover {
-                background: $red;
+                background: #761626;
+                color: #FFFFFF;
             }
 
             @media screen and (max-width: ($show-nav - 1px)) {

@@ -296,7 +296,8 @@ a.link:active {
 }
 
 .menu--text > a:hover {
-  background: #981E32;
+  background: #761626;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 799px) {
