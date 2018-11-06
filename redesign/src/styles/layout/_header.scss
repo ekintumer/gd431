@@ -3,14 +3,30 @@
     margin-top: 25px;
     z-index: 100;
     position: fixed;
-
 }
 
 .sticky {
     position: sticky;
     background-image: url('../images/image--main.svg');
+    background-size: cover;
     height: 200px;
     width: 100%;
     background-repeat: no-repeat;
     top: -80px;
+}
+
+@media only screen and (min-width: 900px) {
+    .sticky {
+        height: 120px;
+        background-position-y: -265px;
+
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .sticky {
+        height: 120px;
+        background-position-y: -200px;
+
+    }
 }

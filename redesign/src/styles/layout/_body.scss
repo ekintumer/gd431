@@ -3,12 +3,30 @@
         grid-column: 2/4;
         grid-row: 2/5;
         max-width: 600px;
+        height: 370px;
     }
 
+    .text {
+        &--header {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main {
+        grid-column: 2/4;
+        grid-row: 2/5;
+        max-width: 600px;
+        height: 570px;
+    }
 
     .text {
-        &--main {
-            margin-bottom: 30px;
+        &--header {
+            font-size: 1.8rem;
+            margin-top: 15px;
+            margin-bottom: 25px;
         }
     }
 }

@@ -1,11 +1,7 @@
-body {
+section.site-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-rows: repeat(6, 1fr);
-}
-
-.site-wrapper {
-    grid-column: 1 /4;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
 }
 
 header {
