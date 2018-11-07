@@ -57,6 +57,12 @@ header {
   grid-column: 1 / 4;
 }
 
+.sticky {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
 .main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -105,26 +111,26 @@ img.logo {
   height: 200px;
   width: 100%;
   background-repeat: no-repeat;
-  top: -80px;
+  top: -85px;
 }
 
 @media only screen and (min-width: 1440px) {
   .sticky {
-    height: 120px;
+    height: 115px;
     background-position-y: -300px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   .sticky {
-    height: 120px;
+    height: 115px;
     background-position-y: -265px;
   }
 }
 
 @media only screen and (min-width: 620px) {
   .sticky {
-    height: 120px;
+    height: 115px;
     background-position-y: -200px;
   }
 }
@@ -138,14 +144,37 @@ img.logo {
   z-index: 101;
 }
 
+@media screen and (min-width: 1000px) {
+  .nav-wrapper {
+    top: 115px;
+  }
+}
+
 .navigation {
   position: relative;
 }
 
+@media screen and (min-width: 1000px) {
+  .navigation {
+    background-color: #981E32;
+    height: 150%;
+  }
+}
+
 .menu--button {
   position: fixed;
-  left: 220px;
+  right: 0;
   top: 0;
+  color: #FFFFFF;
+  background: #981E32;
+  width: 104px;
+  height: 114px;
+}
+
+.menu--button[aria-expanded="true"] {
+  background: #EAAB00;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .menu--button[aria-expanded="true"] .menu-icon--line:nth-child(1) {
@@ -162,13 +191,13 @@ img.logo {
           transform: translateY(-18px) rotate(-45deg);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .menu--button {
     display: none;
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 999px) {
   .menu--list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -194,11 +223,31 @@ img.logo {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 999px) and (max-width: 999px) {
+  .menu--list {
+    background-color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .menu--list:active {
+    background: #FFFFFF;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .menu--list {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 452px;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 90px;
   }
 }
 
@@ -215,13 +264,41 @@ img.logo {
   margin-bottom: 1px;
   width: 320px;
   height: 75px;
+  letter-spacing: .05rem;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 999px) {
   .menu--text {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu--text {
+    margin: 0;
+    font-size: .8rem;
+    height: 45px;
+    line-height: 70px;
+    width: 300px;
+  }
+}
+
+.menu--text > a {
+  width: 320px;
+  -webkit-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.menu--text > a:hover {
+  background: #761626;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 999px) {
+  .menu--text > a {
+    font-size: .9rem;
   }
 }
 
@@ -264,46 +341,6 @@ a.link {
 a.link:active {
   color: #212121;
   font-style: italic;
-}
-
-.menu--button {
-  color: #FFFFFF;
-  background: #981E32;
-  width: 104px;
-  height: 114px;
-}
-
-.menu--button[aria-expanded="true"] {
-  background: #EAAB00;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-
-@media screen and (max-width: 799px) {
-  .menu--list {
-    background-color: #ffffff;
-  }
-}
-
-.menu--list:active {
-  background: #FFFFFF;
-}
-
-.menu--text > a {
-  width: 320px;
-  -webkit-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-}
-
-.menu--text > a:hover {
-  background: #761626;
-  color: #FFFFFF;
-}
-
-@media screen and (max-width: 799px) {
-  .menu--text > a {
-    font-size: .9rem;
-  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -389,6 +426,7 @@ a.active:after {
 footer {
   height: 380px;
   width: auto;
+  z-index: 102;
 }
 
 .icon {
