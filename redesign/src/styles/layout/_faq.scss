@@ -1,53 +1,51 @@
 // transition
 
-//=	transition: ($transition-property, $transition-time, $method);
-
-// =-webkit-transition {
-// 	$transition-property $transition-time $method -moz-transition: $transition-property $transition-time $method transition: $transition-property $transition-time $method=size($width, $height) width: $width height: $height lighten($color, 50%);
-
 $border: 1px solid;
 
 .accordion {
 	max-width: 560px;
 	margin: 0 auto 100px;
 	border-top: 1px solid;
-
 }
 
-li.faq--list {
-	border-bottom: 1px solid;
-	position: relative;
-}
+.faq {
+	&--list {
+		border-bottom: 1px solid;
+		position: relative;
+	}
 
-p.faq--answer {
-	display: none;
-	padding: 10px 25px 30px;
-	color: lighten($red, 15%);
-}
+	&--answer {
+		display: none;
+		padding: 10px 25px 30px;
+		color: lighten($red, 15%);
+	}
 
-a.faq--question {
-	width: 100%;
-	display: block;
-	cursor: pointer;
-	text-indent: 15px;
-	user-select: none;
+	&--question {
+		width: 100%;
+		display: block;
+		cursor: pointer;
+		user-select: none;
+		padding: 10px;
 
-	&:after {
-		size: (8px, 8px);
-		border-right: 1px solid $red;
-		border-bottom: 1px solid $red;
-		position: absolute;
-		right: 10px;
-		content: " ";
-		top: 17px;
-		transform: rotate(-45deg) +transition(all, 0.2s, ease-in-out);
+		&:after {
+			size: (8px, 8px);
+			border-right: 1px solid $red;
+			border-bottom: 1px solid $red;
+			position: absolute;
+			right: 10px;
+			content: " ";
+			top: 17px;
+			transform: rotate(-45deg) + stransition(all, 0.2s, ease-in-out);
+		}
+
 	}
 }
 
-// p {
-// 	padding: 10px;
-// }
-
 a.active:after {
-	transform: rotate(45deg) +transition(all, 0.2s, ease-in-out);
+	transform: rotate(45deg) + transition(all, 0.2s, ease-in-out);
 }
+
+
+// p {
+// 	
+// }

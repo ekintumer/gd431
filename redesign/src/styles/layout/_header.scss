@@ -1,7 +1,7 @@
 .logo--expunge {
     margin-left: 25px;
     margin-top: 25px;
-    z-index: 100;
+    z-index: 2;
     position: fixed;
 }
 
@@ -11,30 +11,24 @@
     background-size: cover;
     height: 200px;
     width: 100%;
+    z-index: 1;
     background-repeat: no-repeat;
     top: -85px;
-}
 
-@media only screen and (min-width: 1440px) {
-    .sticky {
-        height: 115px;
-        background-position-y: -300px;
-
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .sticky {
-        height: 115px;
-        background-position-y: -265px;
-
-    }
-}
-
-@media only screen and (min-width: 620px) {
-    .sticky {
+    @media only screen and (min-width: 620px) {
         height: 115px;
         background-position-y: -200px;
+        background-position-x: -1px;
+        top: 0;
+    }
+
+    @media only screen and (min-width: 900px) {
+        height: 115px;
+        background-position-y: -265px;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        background-position-y: -300px;
 
     }
 }

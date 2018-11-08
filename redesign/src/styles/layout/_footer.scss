@@ -1,7 +1,28 @@
 footer {
     height: 380px;
     width: auto;
-    z-index: 102;
+    z-index: 4;
+
+    @media only screen and (min-width: 620px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        width: auto;
+    }
+
+    @media only screen and (min-width: 900px) {
+        height: 130px;
+        width: auto;
+        bottom: 0;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1000px) {
+        position: fixed;
+        width: 100%;
+
+
+    }
 }
 
 .icon {
@@ -43,24 +64,7 @@ img.logo {
     }
 }
 
-@media only screen and (min-width: 620px) {
-    footer {
-        display: flex;
-        flex-wrap: wrap;
-        height: 250px;
-        width: auto;
-    }
-}
 
-@media only screen and (min-width: 900px) {
-    footer {
-        height: 130px;
-        width: auto;
-        bottom: 0;
-        justify-content: space-between;
-    }
-
-    .sponsors {
-        margin-right: 30px;
-    }
+.sponsors {
+    margin-right: 30px;
 }

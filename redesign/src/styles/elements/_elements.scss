@@ -20,24 +20,20 @@
 .text {
     &--main {
         font-size: .8rem;
-        color: #212121;
+        color: $black;
         letter-spacing: 0.08rem;
         line-height: 1.5rem;
     }
 
     &--header {
         font-size: 1.2rem;
-        color: #212121;
+        color: $black1;
         letter-spacing: 0.08rem;
     }
-}
 
-@media only screen and (min-width: 1440px) {
-    .text {
+    @media only screen and (min-width: 1440px) {
         &--main {
             font-size: 1rem;
-            color: #212121;
-            letter-spacing: 0.08rem;
             line-height: 1.8rem;
         }
 
@@ -47,37 +43,47 @@
     }
 }
 
+.menu {
+    &--text {
+        text-indent: 40px;
+        line-height: 75px;
+        letter-spacing: .05rem;
 
+        @media screen and (min-width: $show-nav) {
+            margin: 0;
+            font-size: .8rem;
+            height: 45px;
+            line-height: 70px;
+            width: 300px;
+        }
+    }
+}
 
-// .menu {
+.faq {
+    &--question {
+        font-size: .9rem;
+        text-indent: 15px;
+    }
 
-//     &__button {
-//         @include size(104px, 114px);
-//         background: #981E32;
-//         z-index: 110;
-//     }
+    &--answer {
+        font-size: .9rem;
+    }
+}
 
-//     &__text {
-//         background-color: #981E32;
-//         color: #FFFFFF;
-//         font-size: .9rem;
-//         letter-spacing: 1.07px;
-//         line-height: 75px;
-//         text-indent: 40px;
-//         text-align: left;
-//     }
-// }
+a.faq {
+    color: $red;
+}
 
 .main {
-    margin-top: 40px;
+    margin-top: 10px;
     margin-bottom: 40px;
 }
 
-a {
-    color: #FFFFFF;
+a.footer {
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
+a.footer:hover {
     color: gray;
 }

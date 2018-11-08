@@ -69,6 +69,17 @@ header {
   grid-column: 1 /4;
 }
 
+@media only screen and (min-width: 1440px) {
+  .main {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+  }
+}
+
 footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -99,7 +110,7 @@ img.logo {
 .logo--expunge {
   margin-left: 25px;
   margin-top: 25px;
-  z-index: 100;
+  z-index: 2;
   position: fixed;
 }
 
@@ -110,14 +121,17 @@ img.logo {
   background-size: cover;
   height: 200px;
   width: 100%;
+  z-index: 1;
   background-repeat: no-repeat;
   top: -85px;
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 620px) {
   .sticky {
     height: 115px;
-    background-position-y: -300px;
+    background-position-y: -200px;
+    background-position-x: -1px;
+    top: 0;
   }
 }
 
@@ -128,10 +142,9 @@ img.logo {
   }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 1440px) {
   .sticky {
-    height: 115px;
-    background-position-y: -200px;
+    background-position-y: -300px;
   }
 }
 
@@ -141,12 +154,13 @@ img.logo {
 
 .nav-wrapper {
   position: absolute;
-  z-index: 101;
+  z-index: 3;
 }
 
 @media screen and (min-width: 1000px) {
   .nav-wrapper {
     top: 115px;
+    position: fixed;
   }
 }
 
@@ -157,7 +171,7 @@ img.logo {
 @media screen and (min-width: 1000px) {
   .navigation {
     background-color: #981E32;
-    height: 150%;
+    height: 500px;
   }
 }
 
@@ -259,12 +273,9 @@ img.logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-  text-indent: 40px;
-  line-height: 75px;
   margin-bottom: 1px;
   width: 320px;
   height: 75px;
-  letter-spacing: .05rem;
 }
 
 @media screen and (max-width: 999px) {
@@ -272,16 +283,6 @@ img.logo {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .menu--text {
-    margin: 0;
-    font-size: .8rem;
-    height: 45px;
-    line-height: 70px;
-    width: 300px;
   }
 }
 
@@ -352,7 +353,6 @@ a.link:active {
     -ms-grid-row-span: 3;
     grid-row: 2/5;
     max-width: 600px;
-    height: 370px;
   }
   .text--header {
     margin-top: 15px;
@@ -362,12 +362,6 @@ a.link:active {
 
 @media only screen and (min-width: 1440px) {
   .main {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 2;
-    grid-column: 2/4;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 3;
-    grid-row: 2/5;
     max-width: 600px;
     height: 570px;
   }
@@ -384,29 +378,29 @@ a.link:active {
   border-top: 1px solid;
 }
 
-li.faq--list {
+.faq--list {
   border-bottom: 1px solid;
   position: relative;
 }
 
-p.faq--answer {
+.faq--answer {
   display: none;
   padding: 10px 25px 30px;
   color: #d62d49;
 }
 
-a.faq--question {
+.faq--question {
   width: 100%;
   display: block;
   cursor: pointer;
-  text-indent: 15px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  padding: 10px;
 }
 
-a.faq--question:after {
+.faq--question:after {
   size: 8px, 8px;
   border-right: 1px solid #981E32;
   border-bottom: 1px solid #981E32;
@@ -414,8 +408,8 @@ a.faq--question:after {
   right: 10px;
   content: " ";
   top: 17px;
-  -webkit-transform: rotate(-45deg)transition(all, 0.2s, ease-in-out);
-          transform: rotate(-45deg)transition(all, 0.2s, ease-in-out);
+  -webkit-transform: rotate(-45deg)stransition(all, 0.2s, ease-in-out);
+          transform: rotate(-45deg)stransition(all, 0.2s, ease-in-out);
 }
 
 a.active:after {
@@ -426,7 +420,37 @@ a.active:after {
 footer {
   height: 380px;
   width: auto;
-  z-index: 102;
+  z-index: 4;
+}
+
+@media only screen and (min-width: 620px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 250px;
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  footer {
+    height: 130px;
+    width: auto;
+    bottom: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  footer {
+    position: fixed;
+    width: 100%;
+  }
 }
 
 .icon {
@@ -467,30 +491,8 @@ img.logo--advocates {
   margin-left: 20px;
 }
 
-@media only screen and (min-width: 620px) {
-  footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: 250px;
-    width: auto;
-  }
-}
-
-@media only screen and (min-width: 900px) {
-  footer {
-    height: 130px;
-    width: auto;
-    bottom: 0;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .sponsors {
-    margin-right: 30px;
-  }
+.sponsors {
+  margin-right: 30px;
 }
 
 .footer {
@@ -537,8 +539,33 @@ img.logo--advocates {
   }
 }
 
+.menu--text {
+  text-indent: 40px;
+  line-height: 75px;
+  letter-spacing: .05rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .menu--text {
+    margin: 0;
+    font-size: .8rem;
+    height: 45px;
+    line-height: 70px;
+    width: 300px;
+  }
+}
+
+.faq--question {
+  font-size: .9rem;
+  text-indent: 15px;
+}
+
+.faq--answer {
+  font-size: .9rem;
+}
+
 .main {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
