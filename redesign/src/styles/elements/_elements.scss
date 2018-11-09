@@ -22,16 +22,16 @@
         letter-spacing: 0;
         opacity: 0.7;
         text-decoration: none;
+        transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: gray;
+            color: rgb(186, 186, 186);
         }
 
         &:visited {
             color: #FFFFFF;
         }
     }
-
 }
 
 .text {
@@ -43,10 +43,12 @@
     }
 
     &--header {
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: $black;
-        letter-spacing: 0.08rem;
+        letter-spacing: 0.05rem;
         line-height: 2rem;
+        margin-bottom: 30px;
+        text-transform: uppercase;
     }
 
     @media only screen and (min-width: 1440px) {
@@ -63,15 +65,15 @@
 
 .menu {
     &--text {
-        text-indent: 40px;
         line-height: 75px;
         letter-spacing: .05rem;
+        text-indent: 40px;
 
         @media screen and (min-width: 1000px) {
-            margin: 0;
             font-size: .8rem;
             height: 45px;
             line-height: 70px;
+            margin: 0;
             width: 300px;
         }
     }
@@ -79,12 +81,15 @@
 
 .faq {
     &--question {
-        font-size: .8rem;
-        text-indent: 15px;
         color: $red;
+        font-size: .87rem;
+        text-align: left;
     }
 
     &--answer {
-        font-size: .9rem;
+        font-size: .87rem;
+        color: $lightblack;
+        line-height: 20px;
+        letter-spacing: .02rem;
     }
 }

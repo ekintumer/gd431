@@ -7,6 +7,7 @@ $border: 1px solid;
 	// margin: 0 auto 100px;
 	border-top: 1px solid $red;
 	padding: 0;
+	margin-left: 4vw;
 }
 
 .faq {
@@ -18,12 +19,10 @@ $border: 1px solid;
 	&--answer {
 		display: none;
 		padding: 10px 25px 30px;
-		color: lighten($red, 15%);
 	}
 
 	&--question {
-		width: 100%;
-		text-align: left;
+		width: 90%;
 		display: block;
 		cursor: pointer;
 		user-select: none;
@@ -34,6 +33,7 @@ $border: 1px solid;
 			@include size(8px, 8px);
 			border-right: 1px solid $red;
 			border-bottom: 1px solid $red;
+			margin-top: 6px;
 			position: absolute;
 			right: 10px;
 			content: " ";

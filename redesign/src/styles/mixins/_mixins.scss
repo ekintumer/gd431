@@ -2,7 +2,3 @@
     height: $height;
     width: $width;
 }
-
-@mixin transition($transition-property, $transition-time, $method) {
-    transition: $transition-property $transition-time $method;
-}
