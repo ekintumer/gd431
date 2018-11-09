@@ -3,6 +3,6 @@
     width: $width;
 }
 
-@mixin transition ($transition-property, $transition-time, $method) {
+@mixin transition($transition-property, $transition-time, $method) {
     transition: $transition-property $transition-time $method;
 }

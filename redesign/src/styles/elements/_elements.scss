@@ -1,13 +1,13 @@
 .footer {
-    color: #FFFFFF;
     background: #212121;
+    color: #FFFFFF;
 
     &--title {
         font-size: .9rem;
-        text-transform: uppercase;
         letter-spacing: 1.07px;
-        margin-top: 30px;
         margin-bottom: 11px;
+        margin-top: 30px;
+        text-transform: uppercase;
     }
 
     &--text {
@@ -15,6 +15,23 @@
         letter-spacing: 0;
         opacity: 0.7;
     }
+
+    &--link {
+        color: #FFFFFF;
+        font-size: .8rem;
+        letter-spacing: 0;
+        opacity: 0.7;
+        text-decoration: none;
+
+        &:hover {
+            color: gray;
+        }
+
+        &:visited {
+            color: #FFFFFF;
+        }
+    }
+
 }
 
 .text {
@@ -27,8 +44,9 @@
 
     &--header {
         font-size: 1.2rem;
-        color: $black1;
+        color: $black;
         letter-spacing: 0.08rem;
+        line-height: 2rem;
     }
 
     @media only screen and (min-width: 1440px) {
@@ -49,7 +67,7 @@
         line-height: 75px;
         letter-spacing: .05rem;
 
-        @media screen and (min-width: $show-nav) {
+        @media screen and (min-width: 1000px) {
             margin: 0;
             font-size: .8rem;
             height: 45px;
@@ -61,29 +79,12 @@
 
 .faq {
     &--question {
-        font-size: .9rem;
+        font-size: .8rem;
         text-indent: 15px;
+        color: $red;
     }
 
     &--answer {
         font-size: .9rem;
     }
-}
-
-a.faq {
-    color: $red;
-}
-
-.main {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
-a.footer {
-    color: white;
-    text-decoration: none;
-}
-
-a.footer:hover {
-    color: gray;
 }
