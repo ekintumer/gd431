@@ -22,6 +22,7 @@
   cursor: pointer;
   padding: 0;
   margin: 0;
+  background: none;
 }
 
 body {
@@ -135,17 +136,15 @@ img.logo {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1000px) {
   .sticky {
     background-position-y: -265px;
-    height: 115px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .sticky {
     background-position-y: -320px;
-    height: 115px;
   }
 }
 
@@ -161,7 +160,7 @@ img.logo {
 
 .nav-wrapper {
   position: absolute;
-  z-index: 3;
+  z-index: 4;
 }
 
 @media screen and (min-width: 1000px) {
@@ -169,6 +168,7 @@ img.logo {
     top: 115px;
     position: fixed;
     height: 100%;
+    z-index: 3;
   }
 }
 
@@ -440,10 +440,25 @@ button.active:after {
   transition: all 0.2s ease-in-out;
 }
 
+.tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 footer {
   height: 380px;
   width: auto;
-  z-index: 4;
+  z-index: 3;
 }
 
 @media only screen and (min-width: 620px) {
@@ -473,6 +488,7 @@ footer {
   footer {
     position: fixed;
     width: 100%;
+    z-index: 4;
   }
 }
 
@@ -569,6 +585,13 @@ img.logo--advocates {
   line-height: 2rem;
   margin-bottom: 30px;
   text-transform: uppercase;
+}
+
+.text--tabs {
+  font-size: .9rem;
+  color: #981E32;
+  letter-spacing: 0.57px;
+  line-height: 16px;
 }
 
 @media only screen and (min-width: 1440px) {

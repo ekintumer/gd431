@@ -51,6 +51,13 @@
         text-transform: uppercase;
     }
 
+    &--tabs {
+        font-size: .9rem;
+        color: $red;
+        letter-spacing: 0.57px;
+        line-height: 16px;
+    }
+
     @media only screen and (min-width: 1440px) {
         &--main {
             font-size: 1rem;

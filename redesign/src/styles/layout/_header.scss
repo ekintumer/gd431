@@ -15,8 +15,6 @@
     width: 100%;
     z-index: 1;
 
-
-
     @media only screen and (min-width: 620px) {
         background-position-x: -1px;
         background-position-y: -200px;
@@ -24,14 +22,12 @@
         top: 0;
     }
 
-    @media only screen and (min-width: 900px) {
+    @media only screen and (min-width: $show-nav) {
         background-position-y: -265px;
-        height: 115px;
     }
 
     @media only screen and (min-width: 1280px) {
         background-position-y: -320px;
-        height: 115px;
     }
 
     @media only screen and (min-width: 1440px) {

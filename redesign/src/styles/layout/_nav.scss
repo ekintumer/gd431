@@ -1,15 +1,17 @@
 [data-visible="false"] {
     display: none;
+
 }
 
 .nav-wrapper {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
 
     @media screen and (min-width: $show-nav) {
         top: 115px;
         position: fixed;
         height: 100%;
+        z-index: 3;
     }
 }
 
