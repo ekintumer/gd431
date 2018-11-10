@@ -5,8 +5,6 @@
     &--title {
         font-size: .9rem;
         letter-spacing: 1.07px;
-        margin-bottom: 11px;
-        margin-top: 30px;
         text-transform: uppercase;
     }
 
@@ -47,13 +45,12 @@
         color: $black;
         letter-spacing: 0.05rem;
         line-height: 2rem;
-        margin-bottom: 30px;
         text-transform: uppercase;
     }
 
     &--tabs {
         font-size: .85rem;
-        color: $red;
+        color: rgba($color: $red, $alpha: 0.4);
         line-height: 16px;
     }
 
@@ -75,7 +72,7 @@
         letter-spacing: .05rem;
         text-indent: 40px;
 
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: $show-nav) {
             font-size: .8rem;
             height: 45px;
             line-height: 70px;
@@ -103,13 +100,17 @@
 .first {
     &--answer {
         font-size: .87rem;
-        color: $black;
-        line-height: 20px;
+        color: $lightblack;
+        line-height: 25px;
         letter-spacing: .02rem;
     }
 
-     &--header {
+    &--header {
         color: $black;
         font-size: .87rem;
     }
+}
+
+.more {
+    margin:0;
 }

@@ -6,6 +6,12 @@
     max-width: 90vw;
 }
 
+.text {
+    &--header {
+        margin-bottom: 30px;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
     .main {
         grid-column: 2/4;

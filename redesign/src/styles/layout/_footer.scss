@@ -21,8 +21,13 @@ footer {
         position: fixed;
         width: 100%;
         z-index: 4;
+    }
+}
 
-
+.footer {
+    &--title {
+        margin-bottom: 11px;
+        margin-top: 30px;
     }
 }
 
