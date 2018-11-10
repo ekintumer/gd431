@@ -453,6 +453,17 @@ button.active:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(152, 30, 50, 0.4);
+}
+
+.text--second .text--third {
+  display: none;
 }
 
 footer {
@@ -588,9 +599,8 @@ img.logo--advocates {
 }
 
 .text--tabs {
-  font-size: .9rem;
+  font-size: .85rem;
   color: #981E32;
-  letter-spacing: 0.57px;
   line-height: 16px;
 }
 

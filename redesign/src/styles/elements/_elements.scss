@@ -52,9 +52,8 @@
     }
 
     &--tabs {
-        font-size: .9rem;
+        font-size: .85rem;
         color: $red;
-        letter-spacing: 0.57px;
         line-height: 16px;
     }
 
@@ -98,5 +97,19 @@
         color: $lightblack;
         line-height: 20px;
         letter-spacing: .02rem;
+    }
+}
+
+.first {
+    &--answer {
+        font-size: .87rem;
+        color: $black;
+        line-height: 20px;
+        letter-spacing: .02rem;
+    }
+
+     &--header {
+        color: $black;
+        font-size: .87rem;
     }
 }
