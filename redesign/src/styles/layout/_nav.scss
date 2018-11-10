@@ -93,8 +93,7 @@
             flex-direction: column;
             height: 452px;
             width: 300px;
-            padding-top: 20px;
-            padding-bottom: 90px;
+            @include padding(20px, 0, 90px, 0);
 
         }
     }

@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    @include margin(10px, 10px);
+    @include margin(10px, 0, 10px, 0);
     margin-left: 3vw;
     margin-right: 3vw;
     padding-top: 15px;

@@ -1,6 +1,5 @@
 .logo--expunge {
-    margin-left: 25px;
-    margin-top: 25px;
+    @include margin(25px, 0, 0, 25px);
     position: fixed;
     z-index: 2;
 }

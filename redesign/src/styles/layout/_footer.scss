@@ -26,8 +26,7 @@ footer {
 
 .footer {
     &--title {
-        margin-bottom: 11px;
-        margin-top: 30px;
+        @include margin(30px, 25px, 11px, 25px);
     }
 }
 
@@ -36,8 +35,7 @@ footer {
 
     &--facebook {
         height: 100%;
-        margin-left: 5px;
-        margin-right: 25px;
+        @include margin(0, 25px, 0, 5px);
     }
 
     &--youtube {
