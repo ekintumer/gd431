@@ -412,6 +412,12 @@ a.link:active {
   margin-left: 4vw;
 }
 
+@media only screen and (min-width: 1000px) {
+  .accordion {
+    padding-bottom: 150px;
+  }
+}
+
 .faq--list {
   border-bottom: 1px solid #981E32;
   position: relative;
@@ -473,21 +479,30 @@ button.active:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10px;
-  margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 0;
-  margin-left: 3vw;
   margin-right: 3vw;
+  margin-bottom: 10px;
+  margin-left: 3vw;
   padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
 }
 
-.text--second .text--third {
+.text--second {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .text--second {
+    padding-bottom: 150px;
+  }
+}
+
+.text--third {
   display: none;
 }
 
 .text--first {
+  display: none;
   margin-top: 30px;
 }
 
@@ -510,6 +525,21 @@ button.active:after {
 }
 
 .toggle {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: none;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.toggle--second {
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;

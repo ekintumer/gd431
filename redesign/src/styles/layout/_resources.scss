@@ -3,20 +3,27 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    @include margin(10px, 0, 10px, 0);
-    margin-left: 3vw;
-    margin-right: 3vw;
+    @include margin(10px, 3vw, 10px, 3vw);
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
 }
 
 .text {
-    &--second &--third {
+    &--second {
+        margin-top: 30px;
+
+        @media only screen and (min-width: $show-nav) {
+            padding-bottom: 150px;
+        }
+    }
+
+    &--third {
         display: none;
     }
 
     &--first {
+        display: none;
         margin-top: 30px;
 
         @media only screen and (min-width: $show-nav) {
@@ -46,4 +53,13 @@
     border: none;
     @include padding(10px, 0, 10px, 0);
     box-sizing: border-box;
+}
+
+.toggle--second {
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    @include padding(10px, 0, 10px, 0);
+    box-sizing: border-box;
+
 }
