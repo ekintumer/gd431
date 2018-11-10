@@ -5,8 +5,8 @@
 // });
 
 
-//read more 
 
+//read more 
 $(document).ready(function () {
     $(".toggle").click(function () {
         var elem = $(".toggle").text();

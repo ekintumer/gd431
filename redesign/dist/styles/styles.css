@@ -485,8 +485,29 @@ button.active:after {
   }
 }
 
-.first--answer {
-  margin-bottom: 35px;
+.first--header {
+  margin-top: 40px;
+}
+
+.first--answer.more {
+  margin-bottom: 15px;
+}
+
+.more {
+  display: none;
+}
+
+.toggle {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 footer {
@@ -678,5 +699,14 @@ img.logo--advocates {
 .first--header {
   color: #212121;
   font-size: .87rem;
+}
+
+.more {
+  margin: 0;
+}
+
+.toggle {
+  color: #981E32;
+  font-size: .85rem;
 }
 /*# sourceMappingURL=styles.css.map */

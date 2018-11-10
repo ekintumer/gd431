@@ -3,8 +3,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @include margin(10px, 10px);
     margin-left: 3vw;
     margin-right: 3vw;
     padding-top: 15px;
@@ -26,4 +25,25 @@
     }
 }
 
+.first {
+    &--header {
+        margin-top: 40px;
+    }
 
+    &--answer.more {
+        margin-bottom: 15px;
+    }
+}
+
+//read more 
+.more {
+    display: none;
+}
+
+.toggle {
+    user-select: none;
+    cursor: pointer;
+    border: none;
+    @include padding(10px, 0, 10px, 0);
+    box-sizing: border-box;
+}
