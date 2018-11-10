@@ -38,7 +38,6 @@
             transition: background 0.3s ease-in-out;
         }
 
-
         &[aria-expanded="true"] {
             .menu-icon--line {
                 $yValue: 18px;

@@ -409,6 +409,9 @@ a.link:active {
   max-width: 700px;
   border-top: 1px solid #981E32;
   padding: 0;
+  margin-top: 35px;
+  margin-right: 0;
+  margin-bottom: 0;
   margin-left: 4vw;
 }
 
@@ -487,8 +490,30 @@ button.active:after {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
 }
 
+.text--first {
+  display: none;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .text--first {
+    padding-bottom: 150px;
+  }
+}
+
 .text--second {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -499,17 +524,7 @@ button.active:after {
 
 .text--third {
   display: none;
-}
-
-.text--first {
-  display: none;
   margin-top: 30px;
-}
-
-@media only screen and (min-width: 1000px) {
-  .text--first {
-    padding-bottom: 150px;
-  }
 }
 
 .first--header {
@@ -552,6 +567,22 @@ button.active:after {
   padding-left: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.button--resource {
+  border: 1px solid #3A3A3A;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: #3A3A3A;
 }
 
 footer {
@@ -654,14 +685,14 @@ img.logo--advocates {
 }
 
 .footer--text {
-  font-size: .8rem;
+  font-size: .85rem;
   letter-spacing: 0;
   opacity: 0.7;
 }
 
 .footer--link {
   color: #FFFFFF;
-  font-size: .8rem;
+  font-size: .85rem;
   letter-spacing: 0;
   opacity: 0.7;
   text-decoration: none;
@@ -704,7 +735,7 @@ img.logo--advocates {
     line-height: 1.8rem;
   }
   .text--header {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -721,6 +752,13 @@ img.logo--advocates {
     line-height: 70px;
     margin: 0;
     width: 300px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .menu--text {
+    font-size: .9rem;
+    letter-spacing: .08rem;
   }
 }
 
