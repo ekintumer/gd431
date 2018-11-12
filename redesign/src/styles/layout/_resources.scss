@@ -1,12 +1,11 @@
 .tabs {
+    border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     @include margin(10px, 3vw, 10px, 3vw);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
+    @include padding(10px, 0, 15px, 0);
 }
 
 .text {
@@ -20,12 +19,12 @@
     }
 
     &--second {
-        margin-top: 30px;
+        align-items: center;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-top: 30px;
         text-align: center;
-        // display: none;
+        display: none;
 
         @media only screen and (min-width: $show-nav) {
             padding-bottom: 150px;
@@ -33,8 +32,11 @@
     }
 
     &--third {
-        display: none;
-        margin-top: 30px;
+        // display: none;
+        margin-top: 35px;
+        border: 1px solid $grey;
+        border-radius: 5px;
+        @include padding(10px, 0, 10px, 0);
     }
 }
 
@@ -54,31 +56,68 @@
 }
 
 .toggle {
-    user-select: none;
-    cursor: pointer;
     border: none;
-    @include padding(10px, 0, 10px, 0);
     box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    @include padding(10px, 0, 10px, 0);
 }
 
 .toggle--second {
-    user-select: none;
-    cursor: pointer;
     border: none;
-    @include padding(10px, 0, 10px, 0);
     box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+    @include padding(10px, 0, 10px, 0);
 }
 
 .button {
     &--resource {
         border: 1px solid $lightblack;
         border-radius: 4px;
-        margin-bottom: 20px;
+        box-sizing: border-box;
+        color: $lightblack;
+        cursor: pointer;
+        margin-bottom: 25px;
         padding: 12px;
         user-select: none;
-        cursor: pointer;
-        box-sizing: border-box;
         text-decoration: none;
-        color: $lightblack;
+    }
+}
+
+a.button--resource:hover {
+    background: $lightblack;
+    color: #FFFFFF;
+    transition: background 0.5s ease-in-out;
+}
+
+button.text--tabs {
+    padding: 10px;
+}
+
+.third {
+    &--name {
+        display: block;
+        margin-bottom: 5.2px;
+    }
+
+    &--number {
+        display: block;
+        margin: 0;
+    }
+}
+
+.numbers {
+    border-bottom: 1px solid $grey;
+    @include margin(15px, 3vw, 15px, 3vw);
+    padding-bottom: 10px;
+    font-size: .9rem;
+}
+
+@media (min-width: 660px) {
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $grey;
     }
 }

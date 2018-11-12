@@ -64,6 +64,10 @@
             font-size: 1.2rem;
         }
     }
+
+    &--second {
+        font-size: .9rem;
+    }
 }
 
 .menu {
@@ -102,6 +106,8 @@
     }
 }
 
+// resources page
+
 .first {
     &--answer {
         font-size: .87rem;
@@ -123,4 +129,8 @@
 .toggle {
     color: $red;
     font-size: .85rem;
+}
+
+.numbers {
+    font-size: .9rem;
 }

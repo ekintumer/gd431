@@ -4,8 +4,6 @@
 //     this.setAttribute("aria-expanded", !expanded);
 // });
 
-
-
 //read more 
 $(document).ready(function () {
     $(".toggle").click(function () {
