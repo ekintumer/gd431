@@ -472,6 +472,10 @@ button.active:after {
   transition: all 0.2s ease-in-out;
 }
 
+[data-visible="false"] {
+  display: none;
+}
+
 .tabs {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
   display: -webkit-box;
@@ -497,7 +501,6 @@ button.active:after {
 }
 
 .text--first {
-  display: none;
   margin-top: 30px;
 }
 
@@ -520,7 +523,6 @@ button.active:after {
           flex-direction: column;
   margin-top: 30px;
   text-align: center;
-  display: none;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -531,12 +533,12 @@ button.active:after {
 
 .text--third {
   margin-top: 35px;
-  border: 1px solid #c4c4c4;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-right: 0;
-  padding-bottom: 10px;
-  padding-left: 0;
+}
+
+@media only screen and (min-width: 1000px) {
+  .text--third {
+    padding-bottom: 130px;
+  }
 }
 
 .first--header {
@@ -621,9 +623,9 @@ button.text--tabs {
 .numbers {
   border-bottom: 1px solid #c4c4c4;
   margin-top: 15px;
-  margin-right: 3vw;
+  margin-right: 15px;
   margin-bottom: 15px;
-  margin-left: 3vw;
+  margin-left: 15px;
   padding-bottom: 10px;
   font-size: .9rem;
 }
@@ -638,6 +640,19 @@ button.text--tabs {
             justify-content: space-between;
     border-bottom: 1px solid #c4c4c4;
   }
+}
+
+.border {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 3vw;
+  margin-bottom: 0;
+  margin-left: 3vw;
 }
 
 footer {
