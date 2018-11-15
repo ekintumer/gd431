@@ -36,20 +36,40 @@ footer {
     &--facebook {
         height: 100%;
         @include margin(0, 25px, 0, 5px);
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.4s ease-in-out;
+        }
     }
 
     &--youtube {
         height: 100%;
         margin-right: 25px;
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.5s ease-in-out;
+        }
     }
 
     &--linkedin {
         height: 100%;
         margin-right: 25px;
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.5s ease-in-out;
+        }
     }
 
     &--twitter {
         height: 100%;
+
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.5s ease-in-out;
+        }
     }
 }
 

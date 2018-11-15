@@ -1,6 +1,6 @@
-[data-visible="false"] {
-    display: none;
-}
+// [data-visible="false"] {
+//     display: none;
+// }
 
 .tabs {
     border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
@@ -8,7 +8,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    @include margin(10px, 3vw, 10px, 3vw);
+    @include margin(10px, 0, 10px, 0);
     @include padding(10px, 0, 15px, 0);
 }
 
@@ -28,7 +28,7 @@
         flex-direction: column;
         margin-top: 30px;
         text-align: center;
-        // display: none;
+        display: none;
 
         @media only screen and (min-width: $show-nav) {
             padding-bottom: 150px;
@@ -36,7 +36,7 @@
     }
 
     &--third {
-        // display: none;
+        display: none;
         margin-top: 35px;
 
         @media only screen and (min-width: $show-nav) {
@@ -57,24 +57,33 @@
 
 //read more 
 .more {
-    display: none;
+
+    &--first,
+    &--second,
+    &--third,
+    &--fourth,
+    &--fifth {
+        display: none;
+    }
 }
 
 .toggle {
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    user-select: none;
-    @include padding(10px, 0, 10px, 0);
+
+    &--first,
+    &--second,
+    &--third,
+    &--fourth,
+    &--fifth {
+        border: none;
+        box-sizing: border-box;
+        cursor: pointer;
+        user-select: none;
+        @include padding(10px, 0, 10px, 0);
+    }
 }
 
-.toggle--second {
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    user-select: none;
-    @include padding(10px, 0, 10px, 0);
-}
+
+//second tab
 
 .button {
     &--resource {
@@ -93,12 +102,14 @@
 a.button--resource:hover {
     background: $lightblack;
     color: #FFFFFF;
-    transition: background 0.5s ease-in-out;
+    transition: background 0.7s ease-in-out;
 }
 
 button.text--tabs {
     padding: 10px;
 }
+
+// third tab
 
 .third {
     &--name {
