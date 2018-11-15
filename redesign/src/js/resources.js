@@ -1,12 +1,13 @@
 //tab1
 
-// var tab1Trigger = document.getElementById("js-tab-first");
-// tab1Trigger.addEventListener("click", function () {
+// var tabTrigger = document.getElementById("js-tab-button");
+// tabTrigger.addEventListener("click", function () {
 //     let expanded = this.getAttribute("aria-expanded") === "true" || false;
 //     this.setAttribute("aria-expanded", !expanded);
-//     let tab1 = document.getElementById("js-tab-1");
-//     let visible = tab1.getAttribute("data-visible") === "true" || false;
-//     tab1.setAttribute("data-visible", !visible);
+//     let tab = document.getElementById("js-tab");
+//     let visible = tab.getAttribute("data-visible") === "true" || false;
+//     tab.setAttribute("data-visible", !visible);
+
 // });
 
 //tab2
@@ -32,7 +33,6 @@ $(document).ready(function () {
 
             $(".toggle--first").text("+ read more");
             $(".more--first").slideUp();
-
         }
     });
 

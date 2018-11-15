@@ -61,18 +61,6 @@ section.site-wrapper {
   height: 100vh;
 }
 
-header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
-}
-
-.sticky {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-}
-
 .main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -109,12 +97,6 @@ img.logo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1 / 2;
-}
-
-.image--main {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / 4;
 }
 
 .logo--expunge {

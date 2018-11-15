@@ -4,13 +4,13 @@ section.site-wrapper {
     height: 100vh;
 }
 
-header {
-    grid-column: 1 / 4;
-}
+// header {
+//     grid-column: 1 / 4;
+// }
 
-.sticky {
-    grid-row: 1/2;
-}
+// .sticky {
+//     grid-row: 1/2;
+// }
 
 .main {
     grid-column: 1 /4;
@@ -32,8 +32,4 @@ img.logo {
 .logo--expunge {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-}
-
-.image--main {
-    grid-column: 1 / 4;
 }
