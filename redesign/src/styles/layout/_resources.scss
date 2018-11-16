@@ -14,7 +14,7 @@
 
 .text {
     &--first {
-        // display: none;
+        display: none;
         margin-top: 30px;
 
         @media only screen and (min-width: $show-nav) {
@@ -36,7 +36,7 @@
     }
 
     &--third {
-        display: none;
+        // display: none;
         margin-top: 35px;
 
         @media only screen and (min-width: $show-nav) {
@@ -56,6 +56,7 @@
 }
 
 //read more 
+
 .more {
 
     &--first,
@@ -81,7 +82,6 @@
         @include padding(10px, 0, 10px, 0);
     }
 }
-
 
 //second tab
 
@@ -134,13 +134,12 @@ button.text--tabs {
     .numbers {
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid $grey;
     }
 }
 
 .border {
     border: 1px solid $grey;
     border-radius: 5px;
-    @include padding(10px, 0, 10px, 0);
+    // @include padding(10px, 0, 10px, 0);
     @include margin(0, 3vw, 0, 3vw);
 }

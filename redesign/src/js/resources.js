@@ -1,26 +1,3 @@
-//tab1
-
-// var tabTrigger = document.getElementById("js-tab-button");
-// tabTrigger.addEventListener("click", function () {
-//     let expanded = this.getAttribute("aria-expanded") === "true" || false;
-//     this.setAttribute("aria-expanded", !expanded);
-//     let tab = document.getElementById("js-tab");
-//     let visible = tab.getAttribute("data-visible") === "true" || false;
-//     tab.setAttribute("data-visible", !visible);
-
-// });
-
-//tab2
-
-// var tab2Trigger = document.getElementById("js-tab-second");
-// tab2Trigger.addEventListener("click", function () {
-//     let expanded = this.getAttribute("aria-expanded") === "true" || false;
-//     this.setAttribute("aria-expanded", !expanded);
-//     let tab2 = document.getElementById("js-tab-2");
-//     let visible = tab2.getAttribute("data-visible") === "true" || false;
-//     tab2.setAttribute("data-visible", !visible);
-// });
-
 // first tab - read more 
 
 $(document).ready(function () {

@@ -26,5 +26,6 @@
 }
 
 .u-border-reset {
-    border: none;
+    border: none !important;
+    padding: 0 !important;
 }
