@@ -5,22 +5,23 @@ title: RESOURCES | Expunge Maryland
 
 {% include "_nav.html" %}
 
-{% include "_header.html" %}
-
 <section class= "site-wrapper">
 
+{% include "_header.html" %}
 
 
 <section class="main">
     <header class="text--header u-bold u-add-margin">Resources</header>
 
     <section class="tabs">
-        <button class="text--tabs tab--first u-bold u-button-reset"> Speak to Attorneys</button>
-        <button id="js-tab-second" aria-controls="js-tab-2" aria-expanded="false" class="text--tabs tab--second u-bold u-button-reset "> Court Documents</button>
-        <button class="text--tabs tab--third u-bold u-button-reset"> Reentry &#38; Job Training</button>
+        <button id="accordion__trigger--one" aria-controls="accordion__content--one" aria-expanded="true" class="js-accordion__trigger text--tabs u-bold u-button-reset"> Speak to Attorneys</button>
+        <button id="accordion__trigger--two" aria-controls="accordion__content--two" aria-expanded="false" class="js-accordion__trigger text--tabs u-bold u-button-reset "> Court Documents</button>
+        <button id="accordion__trigger--three" aria-controls="accordion__content--three" aria-expanded="false" class="js-accordion__trigger text--tabs u-bold u-button-reset"> Reentry &#38; Job Training</button>
     </section>
 
-    <section class="text--first u-add-margin">
+    {# first tab #}
+
+    <section id="accordion__content--one" aria-labelledby="accordion__trigger--one" class="js-accordion__content text--first u-add-margin" tabindex="-1">
         <div class= "first--wrapper">
             <h1 class= "first--header u-bold">The Maryland Volunteer Lawyers' Service (MVLS)<h1>
             <p class= "first--answer">MVLS provides pro bono legal representation to Marylanders with limited income. MVLS accepts criminal record expungement cases.</p>
@@ -79,13 +80,17 @@ title: RESOURCES | Expunge Maryland
         </div>
     </section>
 
-    <section id="js-tab-2" aria-hidden="false" data-visible="false" class="text--second">
+    {# second tab #}
+
+    <section id="accordion__content--two" aria-labelledby="accordion__trigger--two" class="js-accordion__content text--second" tabindex="-1" style="display:none">
         <a class= "button--resource" href="http://www.expungemaryland.org/assets/petition-49f8ef9c16ddcff87c1d477bf2aad655.pdf" target="_blank">Expungement Petition Form</a>
         <a class= "button--resource" href="http://www.expungemaryland.org/assets/general_waiver_form-ad40ec924e247b8d9a858077634e8ed5.pdf" target="_blank">General Waiver Form</a>
         <a class= "button--resource" href="http://www.expungemaryland.org/assets/pardon_application-e1d3896fd0212fb6f039f52c0b84824f.pdf" target="_blank">Pardon Petition Application</a>
     </section>
 
-    <section class="text--third">
+    {# third tab #}
+
+    <section id="accordion__content--three" aria-labelledby="accordion__trigger--three" class="js-accordion__content text--third" tabindex="-1" style="display:none">
         <ul class="u-unstyled-list border">
             <li class="numbers u-add-margin">
             <a class= "third--name u-bold">United Way 211</a>

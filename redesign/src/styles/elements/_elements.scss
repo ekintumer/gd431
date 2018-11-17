@@ -54,6 +54,13 @@
         font-size: .85rem;
         color: rgba($color: $red, $alpha: 0.4);
         line-height: 16px;
+
+        &[aria-expanded="true"] {
+            color: $red;
+            transition: color 0.4s ease-in-out;
+            border-bottom: 1px solid $red;
+
+        }
     }
 }
 
