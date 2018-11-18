@@ -7,9 +7,9 @@
     z-index: 4;
 
     @media screen and (min-width: $show-nav) {
-        top: 115px;
-        position: fixed;
         height: 100%;
+        position: fixed;
+        top: 115px;
         z-index: 3;
     }
 }
@@ -25,13 +25,13 @@
 
 .menu {
     &--button {
+        background: $red;
+        color: #FFFFFF;
+        height: 114px;
         position: fixed;
         right: 0;
         top: 0;
-        color: #FFFFFF;
-        background: $red;
         width: 104px;
-        height: 114px;
 
         &[aria-expanded="true"] {
             background: $yellow;
@@ -64,13 +64,13 @@
 
     &--list {
         @media screen and (max-width: ($show-nav - 1px)) {
-            flex-direction: column;
             align-items: flex-end;
+            flex-direction: column;
             height: 0;
-            position: fixed;
-            top: 114px;
-            right: 0;
             padding: 0;
+            position: fixed;
+            right: 0;
+            top: 114px;
             width: 320px;
 
             &[data-visible="true"] {

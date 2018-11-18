@@ -122,9 +122,9 @@ button.text--tabs {
 
 .numbers {
     border-bottom: 1px solid $grey;
-    @include margin(15px, 15px, 15px, 15px);
-    padding-bottom: 10px;
     font-size: .9rem;
+    padding-bottom: 10px;
+    @include margin(15px, 15px, 15px, 15px);
 }
 
 @media (min-width: 660px) {

@@ -41,8 +41,8 @@
     }
 
     &--header {
-        font-size: 1rem;
         color: $black;
+        font-size: 1rem;
         letter-spacing: 0.05rem;
         line-height: 2rem;
         text-transform: uppercase;
@@ -51,15 +51,14 @@
     //resources
 
     &--tabs {
-        font-size: .85rem;
         color: rgba($color: $red, $alpha: 0.4);
+        font-size: .85rem;
         line-height: 16px;
 
         &[aria-expanded="true"] {
+            border-bottom: 1px solid $red;
             color: $red;
             transition: color 0.4s ease-in-out;
-            border-bottom: 1px solid $red;
-
         }
     }
 }
@@ -81,8 +80,8 @@
 
 .menu {
     &--text {
-        line-height: 75px;
         letter-spacing: .05rem;
+        line-height: 75px;
         text-indent: 40px;
 
         @media screen and (min-width: $show-nav) {
@@ -108,23 +107,22 @@
     }
 
     &--answer {
-        font-size: .87rem;
         color: $lightblack;
-        line-height: 20px;
+        font-size: .87rem;
         letter-spacing: .02rem;
+        line-height: 20px;
     }
 }
 
 // resources page
-
 //first tab
 
 .first {
     &--answer {
-        font-size: .87rem;
         color: $lightblack;
-        line-height: 25px;
+        font-size: .87rem;
         letter-spacing: .02rem;
+        line-height: 25px;
     }
 
     &--header {

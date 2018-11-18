@@ -1,13 +1,13 @@
 .logo--expunge {
-    @include margin(25px, 0, 0, 25px);
     position: fixed;
     z-index: 2;
+    @include margin(25px, 0, 0, 25px);
 }
 
 .sticky {
     background-image: url('../images/image--main.svg');
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 200px;
     position: sticky;
     top: -85px;

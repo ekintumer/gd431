@@ -3,9 +3,9 @@
 $border: 1px solid;
 
 .accordion {
+	border-top: 1px solid $red;
 	max-width: 700px;
 	// margin: 0 auto 100px;
-	border-top: 1px solid $red;
 	padding: 0;
 	@include margin(35px, 0, 0, 4vw);
 
@@ -26,25 +26,24 @@ $border: 1px solid;
 	}
 
 	&--question {
-		width: 90%;
-		display: block;
 		cursor: pointer;
+		display: block;
 		user-select: none;
+		width: 90%;
 		@include padding(20px, 0, 20px, 0);
 
 		&:after {
 			@include size(8px, 8px);
-			border-right: 1px solid $red;
 			border-bottom: 1px solid $red;
+			border-right: 1px solid $red;
+			content: " ";
 			margin-top: 6px;
 			position: absolute;
 			right: 10px;
-			content: " ";
 			top: 17px;
 			transform: rotate(-45deg);
 			transition: all 0.2s ease-in-out;
 		}
-
 	}
 }
 
