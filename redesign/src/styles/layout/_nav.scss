@@ -151,8 +151,15 @@ a.link {
     color: white;
     text-decoration: none;
 
-    &:active {
-        color: white;
-        font-style: italic;
-    }
+    // &:active {
+    //     color: $black;
+    //     font-style: italic;
+    // }
+}
+
+a.active {
+    color: $black;
+    background: white;
+    font-style: italic;
+    font-weight: 700;
 }
