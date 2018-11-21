@@ -30,6 +30,10 @@
   padding: 0 !important;
 }
 
+.u-center {
+  text-align: center;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   min-height: 100vh;
@@ -45,6 +49,12 @@ html {
 h1 {
   font-weight: 400;
   margin: 0;
+}
+
+h2 {
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
 }
 
 *,
@@ -442,6 +452,56 @@ button.active:after {
   transition: all 0.2s ease-in-out;
 }
 
+.option--button {
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  width: 200px;
+}
+
+.option--text {
+  width: 200px;
+  padding-top: 5px;
+  padding-right: 25px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+}
+
+.error {
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  margin-top: 40px;
+}
+
+.error--text {
+  margin-top: 50px;
+  margin-bottom: 55px;
+}
+
+.back {
+  padding-top: 15px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.options--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .tabs {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
   display: -webkit-box;
@@ -599,6 +659,10 @@ button.text--tabs {
   margin-right: 3vw;
   margin-bottom: 0;
   margin-left: 3vw;
+}
+
+.error--option {
+  font-size: 0.8rem;
 }
 
 footer {
