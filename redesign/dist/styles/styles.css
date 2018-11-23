@@ -615,6 +615,26 @@ a.button--option:hover {
   border-bottom: 2px solid #981E32;
 }
 
+.disclaimer--text {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.disclaimer--button {
+  border-bottom: 2px solid #981E32;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.action {
+  margin-top: 45px;
+  text-align: center;
+}
+
 .tabs {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
   display: -webkit-box;
@@ -1048,5 +1068,18 @@ img.logo--advocates {
   font-size: .75rem;
   font-weight: 600;
   letter-spacing: .02rem;
+}
+
+.disclaimer--text {
+  color: #3A3A3A;
+  font-size: .9rem;
+  line-height: 1.4rem;
+  text-align: center;
+}
+
+.disclaimer--button {
+  color: #981E32;
+  font-size: .75rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */

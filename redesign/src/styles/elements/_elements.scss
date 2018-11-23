@@ -204,3 +204,21 @@
         letter-spacing: .02rem;
     }
 }
+
+//disclaimer page
+
+.disclaimer {
+
+    &--text {
+        color: $lightblack;
+        font-size: .9rem;
+        line-height: 1.4rem;
+        text-align: center;
+    }
+
+    &--button {
+        color: $red;
+        font-size: .75rem;
+        font-weight: 600;
+    }
+}

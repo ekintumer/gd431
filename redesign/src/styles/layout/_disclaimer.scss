@@ -1,0 +1,15 @@
+.disclaimer {
+    &--text {
+        @include padding(15px, 20px, 15px, 20px);
+    }
+
+    &--button {
+        border-bottom: 2px solid $red;
+        @include padding (10px, 5px, 10px, 5px);
+    }
+}
+
+.action {
+    margin-top: 45px;
+    text-align: center;
+}
