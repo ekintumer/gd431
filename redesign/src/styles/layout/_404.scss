@@ -1,37 +1,145 @@
-.option {
-
-    &--button {
+.button {
+    &--option {
         border: 1px solid $grey;
-        border-radius: 3px;
-        width: 200px;
-    }
-
-    &--text {
-        width: 200px;
-        @include padding (5px, 25px, 5px, 25px);
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+        user-select: none;
+        @include padding (15px, 50px, 15px, 50px);
+        @include margin (15px, 30px, 25px, 30px);
     }
 }
 
-.error {
-    @include padding (15px, 25px, 30px, 25px);
+a.button--option:hover {
+    background: $lightblack;
+    transition: background 0.7s ease-in-out;
+    color: #FFFFFF;
+    transition: color 0.7s ease-in-out;
+}
+
+
+.error.border {
     margin-top: 40px;
+}
+
+.error {
+    align-content: center;
+    margin-top: 40px;
+    @include padding (15px, 25px, 30px, 25px);
 
     &--text {
-        margin-top: 50px;
-        margin-bottom: 55px;
+        margin-top: 40px;
+    }
+
+    &--option {
+        width: 265px;
+        @include margin (45px, auto, 35px, auto);
+    }
+
+    //404
+
+    &--title {
+        position: absolute;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 
 .back {
-    @include padding (15px, 25px, 15px, 25px);
+    @include padding (10px, 25px, 10px, 25px);
+
+    &--arrow {
+        height: 10px;
+        width: 10px;
+        border: 2px solid $red;
+        border-width: 2px 2px 0px 0;
+        transform: rotate(-130deg);
+        position: absolute;
+        top: 283px;
+
+        @media only screen and (min-width: 620px) {
+            top: 200px;
+        }
+
+        @media only screen and (min-width: $show-nav) {
+            top: 170px;
+        }
+    }
+
+    hr {
+        position: absolute;
+        width: 40px;
+        border: 1px solid $red;
+        top: 280px;
+
+        @media only screen and (min-width: 620px) {
+            top: 198px;
+        }
+
+        @media only screen and (min-width: $show-nav) {
+            top: 168px;
+        }
+    }
+}
+
+
+
+
+//404 wrapper
+
+.outline-title {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media only screen and (min-width: $show-nav) {
+        left: 120px;
+    }
 }
 
 .options {
-    display: flex;
-    // flex-direction: column;
-
     &--flex {
+
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+}
+
+// .options {
+//     // display: flex;
+//     // flex-direction: column;
+//     // align-items: center;
+//     // flex-direction: column;
+
+// }
+
+@media only screen and (min-width: 600px) {
+    .options {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        // &--flex {
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        // }
+    }
+}
+
+.restart {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &--text {
+        text-align: center;
+        @include padding (10px, 10px, 10px, 10px);
+        border-bottom: 2px solid $red;
     }
 }

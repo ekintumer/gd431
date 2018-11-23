@@ -160,3 +160,47 @@
 .numbers {
     font-size: .9rem;
 }
+
+
+//404 page
+
+.back {
+    color: $red;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.error {
+
+    &--title {
+        color: white;
+        font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: .3rem;
+        -webkit-text-stroke: 2.5px $red;
+    }
+
+    &--option {
+        font-size: 0.8rem;
+        color: $lightblack;
+    }
+}
+
+.button {
+
+    &--option {
+        color: $lightblack;
+        font-size: .75rem;
+        text-decoration: none;
+    }
+}
+
+.restart {
+
+    &--text {
+        color: $red;
+        font-size: .75rem;
+        font-weight: 600;
+        letter-spacing: .02rem;
+    }
+}
