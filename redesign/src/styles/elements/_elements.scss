@@ -152,7 +152,6 @@
         color: $red;
         font-size: .85rem;
     }
-
 }
 
 // third tab 
@@ -160,7 +159,6 @@
 .numbers {
     font-size: .9rem;
 }
-
 
 //404 page
 
@@ -220,5 +218,18 @@
         color: $red;
         font-size: .75rem;
         font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+//questions page
+
+.question {
+
+    &--text {
+        color: $lightblack;
+        font-size: .9rem;
+        line-height: 1.4rem;
+        text-align: center;
     }
 }
