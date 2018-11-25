@@ -7,6 +7,10 @@
   margin-right: 25px;
 }
 
+.u-remove-margin {
+  margin: 0;
+}
+
 .u-unstyled-list {
   list-style-type: none;
   margin: 0;
@@ -827,10 +831,11 @@ button.text--tabs {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 40px;
 }
 
 .answer {
-  border: 1px solid #3A3A3A;
+  border: 1px solid #c4c4c4;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -843,6 +848,11 @@ button.text--tabs {
       -ms-user-select: contain;
           user-select: contain;
   width: 250px;
+}
+
+a.red {
+  border: 1px solid #981E32;
+  color: #981E32;
 }
 
 footer {

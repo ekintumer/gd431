@@ -9,10 +9,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 
 .answer {
-    border: 1px solid $lightblack;
+    border: 1px solid $grey;
     border-radius: 4px;
     box-sizing: border-box;
     color: $lightblack;
@@ -21,4 +22,9 @@
     padding: 15px;
     user-select: contain;
     width: 250px;
+}
+
+a.red {
+    border: 1px solid $red;
+    color: $red;
 }
