@@ -48,6 +48,27 @@ a.button--option:hover {
         left: 0;
         right: 0;
         margin: auto;
+        width: auto;
+
+        @media only screen and (min-width: $show-nav) {
+            left: 240px;
+            width: auto;
+        }
+    }
+}
+
+//404 wrapper
+
+.outline-title {
+    position: absolute;
+    width: 100vw;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media only screen and (min-width: $show-nav) {
+        left: 120px;
+        width: auto;
     }
 }
 
@@ -85,23 +106,6 @@ a.button--option:hover {
         @media only screen and (min-width: $show-nav) {
             top: 168px;
         }
-    }
-}
-
-
-
-
-//404 wrapper
-
-.outline-title {
-    position: absolute;
-    width: 100vw;
-    left: 0;
-    right: 0;
-    margin: auto;
-
-    @media only screen and (min-width: $show-nav) {
-        left: 120px;
     }
 }
 

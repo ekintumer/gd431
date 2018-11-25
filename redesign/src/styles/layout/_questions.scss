@@ -1,8 +1,13 @@
 .question {
     &--text {
         margin-top: 40px;
-        @include padding(15px, 20px, 15px, 20px);
+        @include padding(0, 20px, 15px, 20px);
     }
+}
+
+.question.border {
+    margin-top: 40px;
+    @include padding(15px, 20px, 15px, 20px);
 }
 
 .answers {
@@ -27,4 +32,8 @@
 a.red {
     border: 1px solid $red;
     color: $red;
+}
+
+.back--text {
+    margin-left: 5px;
 }

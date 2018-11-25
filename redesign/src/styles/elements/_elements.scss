@@ -166,6 +166,11 @@
     color: $red;
     font-size: .75rem;
     font-weight: 600;
+
+    &--text {
+        text-decoration: none;
+        color: $red;
+    }
 }
 
 .error {

@@ -525,6 +525,29 @@ a.button--option:hover {
   left: 0;
   right: 0;
   margin: auto;
+  width: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .error--title {
+    left: 240px;
+    width: auto;
+  }
+}
+
+.outline-title {
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media only screen and (min-width: 1000px) {
+  .outline-title {
+    left: 120px;
+    width: auto;
+  }
 }
 
 .back {
@@ -573,20 +596,6 @@ a.button--option:hover {
 @media only screen and (min-width: 1000px) {
   .back hr {
     top: 168px;
-  }
-}
-
-.outline-title {
-  position: absolute;
-  width: 100vw;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-@media only screen and (min-width: 1000px) {
-  .outline-title {
-    left: 120px;
   }
 }
 
@@ -644,6 +653,7 @@ a.button--option:hover {
 
 .action {
   margin-top: 45px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
@@ -814,6 +824,14 @@ button.text--tabs {
 
 .question--text {
   margin-top: 40px;
+  padding-top: 0;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.question.border {
+  margin-top: 40px;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
@@ -853,6 +871,10 @@ button.text--tabs {
 a.red {
   border: 1px solid #981E32;
   color: #981E32;
+}
+
+.back--text {
+  margin-left: 5px;
 }
 
 footer {
@@ -1101,6 +1123,11 @@ img.logo--advocates {
   color: #981E32;
   font-size: .75rem;
   font-weight: 600;
+}
+
+.back--text {
+  text-decoration: none;
+  color: #981E32;
 }
 
 .error--title {
