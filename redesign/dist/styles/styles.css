@@ -369,7 +369,6 @@ a.active {
 
 @media only screen and (min-width: 1000px) {
   .main {
-    margin-left: 0;
     margin-top: 50px;
     max-width: 55vw;
   }
@@ -810,10 +809,40 @@ button.text--tabs {
 }
 
 .question--text {
+  margin-top: 40px;
   padding-top: 15px;
   padding-right: 20px;
   padding-bottom: 15px;
   padding-left: 20px;
+}
+
+.answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answer {
+  border: 1px solid #3A3A3A;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #3A3A3A;
+  cursor: pointer;
+  margin-bottom: 25px;
+  padding: 15px;
+  -webkit-user-select: contain;
+     -moz-user-select: contain;
+      -ms-user-select: contain;
+          user-select: contain;
+  width: 250px;
 }
 
 footer {
@@ -1109,5 +1138,12 @@ img.logo--advocates {
   font-size: .9rem;
   line-height: 1.4rem;
   text-align: center;
+}
+
+.answer {
+  text-align: center;
+  text-decoration: none;
+  color: #212121;
+  font-size: .8rem;
 }
 /*# sourceMappingURL=styles.css.map */
