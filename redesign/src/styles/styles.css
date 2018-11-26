@@ -719,6 +719,10 @@ a.button--option:hover {
   margin-top: 40px;
 }
 
+[data-visible="false"] {
+  display: none;
+}
+
 .tabs {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
   display: -webkit-box;
@@ -730,17 +734,50 @@ a.button--option:hover {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 10px;
   margin-right: 0;
   margin-bottom: 10px;
   margin-left: 0;
-  padding-top: 10px;
-  padding-right: 0;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.tabs--button {
+  color: rgba(152, 30, 50, 0.4);
+  display: block;
+  text-decoration: none;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  padding-top: 15px;
+  padding-right: 10px;
   padding-bottom: 15px;
-  padding-left: 0;
+  padding-left: 10px;
+  margin-top: 0;
+  margin-right: 30px;
+  margin-bottom: 0;
+  margin-left: 30px;
+}
+
+.tabs--button:hover {
+  color: #981E32;
+}
+
+.resources-transition {
+  margin: 0;
+}
+
+.active-marker {
+  background: #981E32;
+  bottom: 0;
+  display: none;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.25);
+  transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.25);
 }
 
 .text--first {
@@ -1027,6 +1064,12 @@ img.logo--advocates {
   color: #FFFFFF;
 }
 
+ul.resources-trasition {
+  list-style-type: none;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .text--main {
   font-size: .8rem;
   color: #212121;
@@ -1046,6 +1089,16 @@ img.logo--advocates {
   color: rgba(152, 30, 50, 0.4);
   font-size: .85rem;
   line-height: 16px;
+  display: inline-block;
+  margin: 0;
+}
+
+.text--tabs.active button {
+  color: #981E32;
+}
+
+.text--tabs.active button:hover {
+  color: #981E32;
 }
 
 @media only screen and (min-width: 1440px) {
