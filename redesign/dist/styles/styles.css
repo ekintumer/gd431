@@ -517,6 +517,18 @@ a.red {
   color: #981E32;
 }
 
+p.result {
+  padding: 5px;
+}
+
+.action.result {
+  margin-top: 10px;
+}
+
+.border.result {
+  margin-top: 20px;
+}
+
 .main.error-page {
   margin-bottom: 160px;
 }
