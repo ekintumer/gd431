@@ -139,6 +139,5 @@ button.text--tabs {
 .border {
     border: 1px solid $grey;
     border-radius: 5px;
-    // @include padding(10px, 0, 10px, 0);
-    @include margin(0, auto, 0, 3vw);
+    @include margin(0, auto, 0, 0);
 }

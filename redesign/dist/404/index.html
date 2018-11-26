@@ -41,11 +41,13 @@
 <section class= "site-wrapper">
 
     <section class="main error-page">
-        <button class="back u-button-reset">Back 
-        <div class="back--arrow">
-        </div> 
-        <hr>
-         </button>
+        <button class= "back u-button-reset" onclick="goBack()">
+            <p class="back--text"> Back </p>
+                <section class="back--icon">
+                <div class="back--arrow"></div> <hr>
+                </section>
+        </button>
+         
         <section class="outline-title"> <p class="error--title">404</p> </section>
         <section class="error border u-center"> 
         <h2 class="error--text">Unfortunately we can’t be of further help to you with this information. </h2>
@@ -61,10 +63,9 @@
                 </div>
             </section>
         </section>
-        <section class="restart">
-        <button class="restart--button u-button-reset "> 
-        <p class="restart--text">Start over</p> </button>
-         </section>
+       <section class="action">
+            <a class="disclaimer--button" href="/question_01"> Start over</a>
+        </section>
     </section>
 
 <footer class="footer">
@@ -103,6 +104,7 @@
 <script src="/js/menu.js"></script>
 <script src="/js/faq.js"></script>
 <script src="/js/resources.js"></script>
+<script src="/js/back.js"></script>
 </body>
 
 </html>
