@@ -63,7 +63,7 @@ $(document).ready(function () {
                 return false;
             }
 
-            button = $(elem).find('button');
+            button = $(elem).find('button.active');
             buttonWidth = button.width();
             buttonPadLeft = parseFloat(button.css('padding-left'));
             buttonPadRight = parseFloat(button.css('padding-right'));

@@ -1,28 +1,16 @@
-[data-visible="false"] {
-    display: none;
-}
+// [data-visible="false"] {
+//     display: none;
+// }
 
 .tabs {
     border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    @include margin(10px, 0, 10px, 0);
-    padding: 10px;
-    // display: block;
+    width: auto;
+    left: 0;
     position: relative;
-    text-align: center;
-    // width: auto;
 
     &--button {
-        // border-bottom: 5px solid #eee;
-        color: rgba($color: $red, $alpha: 0.4);
-        display: block;
-        text-decoration: none;
         transition: all .2s ease;
-        @include padding(15px, 10px, 15px, 10px);
-        @include margin(0, 30px, 0, 30px);
+        @include padding(10px, 5px, 10px, 5px);
 
         &:hover {
             color: $red;
@@ -31,18 +19,25 @@
 }
 
 .resources-transition {
+    padding: 0;
     margin: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: auto;
 }
 
 .active-marker {
     background: $red;
     bottom: 0;
-    display: none;
-    height: 4px;
+    display: block;
+    height: 3.5px;
     position: absolute;
+    width: auto;
     left: 0;
-    transition: all .4s cubic-bezier(.25, .25, .25, 1.25);
-    // width: auto;
+    transition: all .4s cubic-bezier(.25, .25, .25, 1.15);
 }
 
 .text {

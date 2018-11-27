@@ -719,12 +719,30 @@ a.button--option:hover {
   margin-top: 40px;
 }
 
-[data-visible="false"] {
-  display: none;
-}
-
 .tabs {
   border-bottom: 1px solid rgba(152, 30, 50, 0.4);
+  width: auto;
+  left: 0;
+  position: relative;
+}
+
+.tabs--button {
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  padding-top: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+.tabs--button:hover {
+  color: #981E32;
+}
+
+.resources-transition {
+  padding: 0;
+  margin: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -734,50 +752,22 @@ a.button--option:hover {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 10px;
-  margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 0;
-  padding: 10px;
-  position: relative;
-  text-align: center;
-}
-
-.tabs--button {
-  color: rgba(152, 30, 50, 0.4);
-  display: block;
-  text-decoration: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-  padding-top: 15px;
-  padding-right: 10px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  margin-top: 0;
-  margin-right: 30px;
-  margin-bottom: 0;
-  margin-left: 30px;
-}
-
-.tabs--button:hover {
-  color: #981E32;
-}
-
-.resources-transition {
-  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: auto;
 }
 
 .active-marker {
   background: #981E32;
   bottom: 0;
-  display: none;
-  height: 4px;
+  display: block;
+  height: 3.5px;
   position: absolute;
+  width: auto;
   left: 0;
-  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.25);
-  transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.25);
+  -webkit-transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.15);
+  transition: all 0.4s cubic-bezier(0.25, 0.25, 0.25, 1.15);
 }
 
 .text--first {
@@ -1086,9 +1076,6 @@ ul.resources-trasition {
 }
 
 .text--tabs {
-  color: rgba(152, 30, 50, 0.4);
-  font-size: .85rem;
-  line-height: 16px;
   display: inline-block;
   margin: 0;
 }
@@ -1148,6 +1135,17 @@ ul.resources-trasition {
   font-size: .87rem;
   letter-spacing: .02rem;
   line-height: 20px;
+}
+
+.tabs--button {
+  font-size: .8rem;
+  line-height: 16px;
+  text-decoration: none;
+  color: rgba(152, 30, 50, 0.4);
+}
+
+.resources-transition {
+  text-align: center;
 }
 
 .first--answer {
