@@ -7,9 +7,4 @@ menuTrigger.addEventListener("click", function () {
     let menu = document.getElementById("js-menu");
     let visible = menu.getAttribute("data-visible") === "true" || false;
     menu.setAttribute("data-visible", !visible);
-    // if (!visible === true) {
-    // 	document.body.style.overflowY = "hidden";
-    // } else {
-    // 	document.body.removeAttribute("style");
-    // }
 });

@@ -501,7 +501,7 @@ button.active:after {
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #3A3A3A;
+  color: #595959;
   cursor: pointer;
   margin-bottom: 25px;
   padding: 15px;
@@ -510,6 +510,13 @@ button.active:after {
       -ms-user-select: contain;
           user-select: contain;
   width: 250px;
+}
+
+a.answer:hover {
+  border: 1px solid #212121;
+  color: #212121;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 a.red {
@@ -554,12 +561,10 @@ p.result {
 }
 
 a.button--option:hover {
-  background: #3A3A3A;
-  -webkit-transition: background 0.7s ease-in-out;
-  transition: background 0.7s ease-in-out;
-  color: #FFFFFF;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
+  border: 1px solid #212121;
+  color: #212121;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .error.border {
@@ -600,21 +605,6 @@ a.button--option:hover {
 @media only screen and (min-width: 1000px) {
   .error--title {
     left: 240px;
-    width: auto;
-  }
-}
-
-.outline-title {
-  position: absolute;
-  width: 100vw;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-@media only screen and (min-width: 1000px) {
-  .outline-title {
-    left: 120px;
     width: auto;
   }
 }
@@ -839,11 +829,11 @@ a.button--option:hover {
 }
 
 .button--resource {
-  border: 1px solid #3A3A3A;
+  border: 1px solid #c4c4c4;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #3A3A3A;
+  color: #595959;
   cursor: pointer;
   font-size: .8rem;
   margin-bottom: 25px;
@@ -857,10 +847,10 @@ a.button--option:hover {
 }
 
 a.button--resource:hover {
-  background: #3A3A3A;
-  color: #FFFFFF;
-  -webkit-transition: background 0.7s ease-in-out;
-  transition: background 0.7s ease-in-out;
+  border: 1px solid #212121;
+  color: #212121;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 button.text--tabs {
@@ -959,6 +949,7 @@ footer {
 
 .icon--facebook {
   height: 100%;
+  width: auto;
   margin-top: 0;
   margin-right: 25px;
   margin-bottom: 0;
@@ -974,6 +965,7 @@ footer {
 .icon--youtube {
   height: 100%;
   margin-right: 25px;
+  width: auto;
 }
 
 .icon--youtube:hover {
@@ -984,6 +976,7 @@ footer {
 
 .icon--linkedin {
   height: 100%;
+  width: auto;
   margin-right: 25px;
 }
 
@@ -995,6 +988,7 @@ footer {
 
 .icon--twitter {
   height: 100%;
+  width: auto;
 }
 
 .icon--twitter:hover {
@@ -1131,7 +1125,7 @@ ul.resources-trasition {
 }
 
 .faq--answer {
-  color: #3A3A3A;
+  color: #595959;
   font-size: .87rem;
   letter-spacing: .02rem;
   line-height: 20px;
@@ -1149,7 +1143,7 @@ ul.resources-trasition {
 }
 
 .first--answer {
-  color: #3A3A3A;
+  color: #595959;
   font-size: .87rem;
   letter-spacing: .02rem;
   line-height: 25px;
@@ -1194,11 +1188,17 @@ ul.resources-trasition {
 
 .error--option {
   font-size: 0.8rem;
-  color: #3A3A3A;
+  color: #595959;
+}
+
+.error--text {
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
 }
 
 .button--option {
-  color: #3A3A3A;
+  color: #595959;
   font-size: .75rem;
   text-decoration: none;
 }
@@ -1211,7 +1211,7 @@ ul.resources-trasition {
 }
 
 .disclaimer--text {
-  color: #3A3A3A;
+  color: #595959;
   font-size: .9rem;
   line-height: 1.4rem;
   text-align: center;
@@ -1225,7 +1225,7 @@ ul.resources-trasition {
 }
 
 .question--text {
-  color: #3A3A3A;
+  color: #595959;
   font-size: .9rem;
   line-height: 1.4rem;
   text-align: center;

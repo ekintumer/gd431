@@ -35,6 +35,7 @@ footer {
 
     &--facebook {
         height: 100%;
+        width: auto;
         @include margin(0, 25px, 0, 5px);
 
         &:hover {
@@ -46,6 +47,7 @@ footer {
     &--youtube {
         height: 100%;
         margin-right: 25px;
+        width: auto;
 
         &:hover {
             opacity: 0.6;
@@ -55,6 +57,7 @@ footer {
 
     &--linkedin {
         height: 100%;
+        width: auto;
         margin-right: 25px;
 
         &:hover {
@@ -65,6 +68,7 @@ footer {
 
     &--twitter {
         height: 100%;
+        width: auto;
 
         &:hover {
             opacity: 0.6;

@@ -208,6 +208,12 @@ ul.resources-trasition {
         font-size: 0.8rem;
         color: $lightblack;
     }
+
+    &--text {
+        font-size: .9rem;
+        font-weight: 600;
+        letter-spacing: 0.05rem;
+    }
 }
 
 .button {

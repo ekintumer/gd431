@@ -112,7 +112,7 @@
 
 .button {
     &--resource {
-        border: 1px solid $lightblack;
+        border: 1px solid $grey;
         border-radius: 4px;
         box-sizing: border-box;
         color: $lightblack;
@@ -127,9 +127,9 @@
 }
 
 a.button--resource:hover {
-    background: $lightblack;
-    color: #FFFFFF;
-    transition: background 0.7s ease-in-out;
+    border: 1px solid $black;
+    color: $black;
+    transition: all 0.7s ease-in-out;
 }
 
 button.text--tabs {

@@ -84,7 +84,6 @@ $(document).ready(function () {
 });
 
 
-
 // first tab - read more 
 
 $(document).ready(function () {
