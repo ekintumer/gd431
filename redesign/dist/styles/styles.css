@@ -61,6 +61,11 @@ h2 {
   letter-spacing: 0.05rem;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 *,
 *::before,
 *::after {
@@ -68,7 +73,7 @@ h2 {
           box-sizing: inherit;
 }
 
-section.site-wrapper {
+.site-wrapper {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -254,12 +259,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 999px) {
-  .menu--list:active {
-    background: white;
-  }
-}
-
 @media screen and (min-width: 1000px) {
   .menu--list {
     display: -webkit-box !important;
@@ -307,7 +306,6 @@ footer {
 
 .menu--text > a:hover {
   background: #761626;
-  color: #FFFFFF;
 }
 
 @media screen and (max-width: 999px) {
@@ -345,18 +343,6 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 40px;
-}
-
-a.link {
-  color: white;
-  text-decoration: none;
-}
-
-a.active {
-  color: #212121;
-  background: white;
-  font-style: italic;
-  font-weight: 700;
 }
 
 .main {
@@ -413,17 +399,17 @@ a.active {
   }
 }
 
-.faq--list {
+.js-faq--list {
   border-bottom: 1px solid #981E32;
   position: relative;
 }
 
-.faq--answer {
+.js-faq--answer {
   display: none;
   padding: 10px 25px 30px;
 }
 
-.faq--question {
+.js-faq--question {
   cursor: pointer;
   display: block;
   -webkit-user-select: none;
@@ -437,7 +423,7 @@ a.active {
   padding-left: 0;
 }
 
-.faq--question:after {
+.js-faq--question:after {
   height: 8px;
   width: 8px;
   border-bottom: 1px solid #981E32;
@@ -497,7 +483,7 @@ button.active:after {
 }
 
 .answer {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #C4C4C4;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -541,7 +527,7 @@ p.result {
 }
 
 .button--option {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #C4C4C4;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -827,7 +813,7 @@ a.button--option:hover {
 }
 
 .button--resource {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #C4C4C4;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -866,7 +852,7 @@ button.text--tabs {
 }
 
 .numbers {
-  border-bottom: 1px solid #c4c4c4;
+  border-bottom: 1px solid #C4C4C4;
   font-size: .9rem;
   padding-bottom: 10px;
   margin-top: 15px;
@@ -887,7 +873,7 @@ button.text--tabs {
 }
 
 .border {
-  border: 1px solid #c4c4c4;
+  border: 1px solid #C4C4C4;
   border-radius: 5px;
   margin-top: 0;
   margin-right: auto;
@@ -945,6 +931,12 @@ footer {
   display: flex;
 }
 
+.icon:hover {
+  opacity: 0.6;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .icon--facebook {
   height: 100%;
   width: auto;
@@ -954,22 +946,10 @@ footer {
   margin-left: 5px;
 }
 
-.icon--facebook:hover {
-  opacity: 0.6;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
-}
-
 .icon--youtube {
   height: 100%;
   margin-right: 25px;
   width: auto;
-}
-
-.icon--youtube:hover {
-  opacity: 0.6;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
 }
 
 .icon--linkedin {
@@ -978,21 +958,9 @@ footer {
   margin-right: 25px;
 }
 
-.icon--linkedin:hover {
-  opacity: 0.6;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
-}
-
 .icon--twitter {
   height: 100%;
   width: auto;
-}
-
-.icon--twitter:hover {
-  opacity: 0.6;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  transition: opacity 0.5s ease-in-out;
 }
 
 img.logo--warnock {
@@ -1116,13 +1084,24 @@ ul.resources-trasition {
   }
 }
 
-.faq--question {
+.is-active {
+  color: #212121;
+  background: white;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.is-active a {
+  color: #212121;
+}
+
+.js-faq--question {
   color: #981E32;
   font-size: .87rem;
   text-align: left;
 }
 
-.faq--answer {
+.js-faq--answer {
   color: #595959;
   font-size: .87rem;
   letter-spacing: .02rem;

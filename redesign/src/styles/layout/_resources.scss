@@ -1,7 +1,3 @@
-// [data-visible="false"] {
-//     display: none;
-// }
-
 .tabs {
     border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
     width: auto;
@@ -115,7 +111,7 @@
         border: 1px solid $grey;
         border-radius: 4px;
         box-sizing: border-box;
-        color: $lightblack;
+        color: $black-light;
         cursor: pointer;
         font-size: .8rem;
         margin-bottom: 25px;

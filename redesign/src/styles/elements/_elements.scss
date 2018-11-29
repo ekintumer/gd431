@@ -32,6 +32,8 @@
     }
 }
 
+// nav
+
 ul.resources-trasition {
     list-style-type: none;
     margin: 0 auto;
@@ -106,7 +108,20 @@ ul.resources-trasition {
     }
 }
 
-.faq {
+.is-active {
+    color: $black;
+    background: white;
+    font-style: italic;
+    font-weight: 700;
+
+    a {
+        color: $black;
+    }
+}
+
+
+
+.js-faq {
     &--question {
         color: $red;
         font-size: .87rem;
@@ -114,7 +129,7 @@ ul.resources-trasition {
     }
 
     &--answer {
-        color: $lightblack;
+        color: $black-light;
         font-size: .87rem;
         letter-spacing: .02rem;
         line-height: 20px;
@@ -140,7 +155,7 @@ ul.resources-trasition {
 
 .first {
     &--answer {
-        color: $lightblack;
+        color: $black-light;
         font-size: .87rem;
         letter-spacing: .02rem;
         line-height: 25px;
@@ -206,7 +221,7 @@ ul.resources-trasition {
 
     &--option {
         font-size: 0.8rem;
-        color: $lightblack;
+        color: $black-light;
     }
 
     &--text {
@@ -219,7 +234,7 @@ ul.resources-trasition {
 .button {
 
     &--option {
-        color: $lightblack;
+        color: $black-light;
         font-size: .75rem;
         text-decoration: none;
     }
@@ -240,7 +255,7 @@ ul.resources-trasition {
 .disclaimer {
 
     &--text {
-        color: $lightblack;
+        color: $black-light;
         font-size: .9rem;
         line-height: 1.4rem;
         text-align: center;
@@ -259,7 +274,7 @@ ul.resources-trasition {
 .question {
 
     &--text {
-        color: $lightblack;
+        color: $black-light;
         font-size: .9rem;
         line-height: 1.4rem;
         text-align: center;

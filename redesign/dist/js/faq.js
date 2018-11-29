@@ -3,10 +3,10 @@
 (function ($) {
     $('.accordion > li:eq(0) button').addClass('active').next().slideDown();
 
-    $('.accordion .faq--question').click(function (j) {
-        var dropDown = $(this).closest('.faq--list').find('.faq--answer');
+    $('.accordion .js-faq--question').click(function (j) {
+        var dropDown = $(this).closest('.js-faq--list').find('.js-faq--answer');
 
-        $(this).closest('.accordion').find('.faq--answer').not(dropDown).slideUp();
+        $(this).closest('.accordion').find('.js-faq--answer').not(dropDown).slideUp();
 
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
