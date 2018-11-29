@@ -49,26 +49,11 @@ a.button--option:hover {
         width: auto;
 
         @media only screen and (min-width: $show-nav) {
-            left: 240px;
+            left: 340px;
             width: auto;
         }
     }
 }
-
-//404 wrapper
-
-// .outline-title {
-//     position: absolute;
-//     width: 100vw;
-//     left: 0;
-//     right: 0;
-//     margin: auto;
-
-//     @media only screen and (min-width: $show-nav) {
-//         left: 120px;
-//         width: auto;
-//     }
-// }
 
 .back {
     @include padding (10px, 25px, 10px, 25px);
@@ -111,6 +96,10 @@ a.button--option:hover {
 }
 
 .options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
     &--flex {
         margin-top: 60px;
@@ -118,11 +107,13 @@ a.button--option:hover {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .options {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-}
+
+
+// @media only screen and (min-width: 600px) {
+//     .options {
+//         display: flex;
+//         flex-direction: row;
+//         flex-wrap: wrap;
+//         justify-content: space-evenly;
+//     }
+// }
