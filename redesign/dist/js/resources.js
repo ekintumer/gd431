@@ -83,70 +83,71 @@ $(document).ready(function () {
     });
 });
 
+//referenced from Glenn McComb https://codepen.io/lenymo/pen/jPNGdq
 
 // first tab - read more 
 
 $(document).ready(function () {
-    $(".toggle--first").click(function () {
-        var elem = $(".toggle--first").text();
+    $(".js-toggle--first").click(function () {
+        var elem = $(".js-toggle--first").text();
         if (elem == "+ read more") {
-            $(".toggle--first").text("– read less");
-            $(".more--first").slideDown();
+            $(".js-toggle--first").text("– read less");
+            $(".js-more--first").slideDown();
         } else {
 
-            $(".toggle--first").text("+ read more");
-            $(".more--first").slideUp();
+            $(".js-toggle--first").text("+ read more");
+            $(".js-more--first").slideUp();
         }
     });
 
-    $(".toggle--second").click(function () {
-        var elem = $(".toggle--second").text();
+    $(".js-toggle--second").click(function () {
+        var elem = $(".js-toggle--second").text();
         if (elem == "+ read more") {
-            $(".toggle--second").text("– read less");
-            $(".more--second").slideDown();
+            $(".js-toggle--second").text("– read less");
+            $(".js-more--second").slideDown();
         } else {
 
-            $(".toggle--second").text("+ read more");
-            $(".more--second").slideUp();
-
-        }
-    });
-
-    $(".toggle--third").click(function () {
-        var elem = $(".toggle--third").text();
-        if (elem == "+ read more") {
-            $(".toggle--third").text("– read less");
-            $(".more--third").slideDown();
-        } else {
-
-            $(".toggle--third").text("+ read more");
-            $(".more--third").slideUp();
+            $(".js-toggle--second").text("+ read more");
+            $(".js-more--second").slideUp();
 
         }
     });
 
-    $(".toggle--fourth").click(function () {
-        var elem = $(".toggle--fourth").text();
+    $(".js-toggle--third").click(function () {
+        var elem = $(".js-toggle--third").text();
         if (elem == "+ read more") {
-            $(".toggle--fourth").text("– read less");
-            $(".more--fourth").slideDown();
+            $(".js-toggle--third").text("– read less");
+            $(".js-more--third").slideDown();
         } else {
 
-            $(".toggle--fourth").text("+ read more");
-            $(".more--fourth").slideUp();
+            $(".js-toggle--third").text("+ read more");
+            $(".js-more--third").slideUp();
 
         }
     });
 
-    $(".toggle--fifth").click(function () {
-        var elem = $(".toggle--fifth").text();
+    $(".js-toggle--fourth").click(function () {
+        var elem = $(".js-toggle--fourth").text();
         if (elem == "+ read more") {
-            $(".toggle--fifth").text("– read less");
-            $(".more--fifth").slideDown();
+            $(".js-toggle--fourth").text("– read less");
+            $(".js-more--fourth").slideDown();
         } else {
 
-            $(".toggle--fifth").text("+ read more");
-            $(".more--fifth").slideUp();
+            $(".js-toggle--fourth").text("+ read more");
+            $(".js-more--fourth").slideUp();
+
+        }
+    });
+
+    $(".js-toggle--fifth").click(function () {
+        var elem = $(".js-toggle--fifth").text();
+        if (elem == "+ read more") {
+            $(".js-toggle--fifth").text("– read less");
+            $(".js-more--fifth").slideDown();
+        } else {
+
+            $(".js-toggle--fifth").text("+ read more");
+            $(".js-more--fifth").slideUp();
 
         }
     });

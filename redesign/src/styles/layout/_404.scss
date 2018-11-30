@@ -3,7 +3,7 @@
 }
 
 .button {
-    &--option {
+    &__option {
         border: 1px solid $grey;
         border-radius: 4px;
         box-sizing: border-box;
@@ -20,27 +20,23 @@
     }
 }
 
-// .error.border {
-//     margin-top: 40px;
-// }
-
 .error {
     align-content: center;
     margin-top: 40px;
     @include padding (15px, 25px, 30px, 25px);
 
-    &--text {
+    &__text {
         margin-top: 40px;
     }
 
-    &--option {
+    &__option {
         width: 265px;
-        @include margin (45px, auto, 35px, auto);
+        @include margin (30px, auto, 35px, auto);
     }
 
     //404
 
-    &--title {
+    &__title {
         position: absolute;
         text-align: center;
         left: 0;
@@ -59,46 +55,6 @@
     }
 }
 
-.back {
-    @include padding (10px, 25px, 10px, 25px);
-
-    &--arrow {
-        border: 2px solid $red;
-        border-width: 2px 2px 0px 0;
-        transform: rotate(-130deg);
-        position: absolute;
-        top: 295px;
-        @include size(10px, 10px);
-
-        @media only screen and (min-width: 620px) {
-            top: 210px;
-        }
-
-        @media only screen and (min-width: $show-nav) {
-            top: 170px;
-        }
-    }
-
-    &--icon {
-        margin-top: 10px;
-    }
-}
-
-.back--icon hr {
-    position: absolute;
-    width: 40px;
-    border: 1px solid $red;
-    top: 293px;
-
-    @media only screen and (min-width: 620px) {
-        top: 207px;
-    }
-
-    @media only screen and (min-width: $show-nav) {
-        top: 168px;
-    }
-}
-
 .options {
     display: flex;
     flex-direction: row;
@@ -106,36 +62,27 @@
     justify-content: space-evenly;
 
     &--flex {
-        margin-top: 60px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }
 
 .back {
-    color: $red;
-    font-size: .75rem;
-    font-weight: 600; // these font styles were previously elsewhere in your CSS
-    @include padding (10px, 25px, 10px, 25px);
-    position: relative; // this was an important bit missing from your previous version
-    // without position relative here, the absolutely positioned elements were trying to sort themselves out relative to the whole page -- which is why you needed to do different values for top with media queries
+    @include padding (10px, 25px, 25px, 25px);
+    position: relative;
 
     &::before {
-        // a pseudo element for the arrow
-        // here, I separated out the border style properties
-        // before, you were using the shorthand property, but that meant you had to override it immediately
         border-color: $red;
         border-style: solid;
         border-width: 2px 2px 0 0;
-        content: ''; // in order to use a pseudo element, you *must* include this property
+        content: '';
         position: absolute;
-        transform: rotate(-135deg); // I only tweaked your rotate a smidge to get things to line up more neatly
-        top: 32px; // notice the smaller top value here because it's relative to the button
+        transform: rotate(-135deg);
+        top: 32px;
         left: 25px;
         @include size(10px, 10px);
     }
 
     &::after {
-        // this pseudo element uses a small block element with a height of 2px instead of your previous hr element with a border
         background-color: $red;
         content: '';
         position: absolute;

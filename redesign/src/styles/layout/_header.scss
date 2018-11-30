@@ -8,11 +8,10 @@
     background-image: url('../images/image--main.svg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
     position: sticky;
     top: -85px;
-    width: 100%;
     z-index: 1;
+    @include size(100%, 200px);
 
     @media only screen and (min-width: 620px) {
         background-position-x: -1px;

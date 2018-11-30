@@ -23,7 +23,7 @@
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: rgb(186, 186, 186);
+            color: $grey;
         }
 
         &:visited {
@@ -95,10 +95,9 @@ ul.resources-trasition {
 
         @media screen and (min-width: $show-nav) {
             font-size: .8rem;
-            height: 45px;
             line-height: 70px;
             margin: 0;
-            width: 300px;
+            @include size(300px, 45px);
         }
 
         @media screen and (max-width: 1440px) {
@@ -119,7 +118,7 @@ ul.resources-trasition {
     }
 }
 
-
+// faq
 
 .js-faq {
     &--question {
@@ -132,8 +131,19 @@ ul.resources-trasition {
         color: $black-light;
         font-size: .87rem;
         letter-spacing: .02rem;
-        line-height: 20px;
+        line-height: 1.5rem;
     }
+}
+
+.faq-link {
+    color: $yellow-dark;
+
+    &:hover {
+        color: $black-light;
+        text-decoration: underline;
+        transition: all .3s ease-in-out;
+    }
+
 }
 
 // resources page
@@ -167,7 +177,7 @@ ul.resources-trasition {
     }
 }
 
-.more {
+.js-more {
 
     &--first,
     &--second,
@@ -178,7 +188,7 @@ ul.resources-trasition {
     }
 }
 
-.toggle {
+.js-toggle {
 
     &--first,
     &--second,
@@ -208,16 +218,11 @@ ul.resources-trasition {
     color: $red;
     font-size: .75rem;
     font-weight: 600;
-
-    &--text {
-        text-decoration: none;
-        color: $red;
-    }
 }
 
 .error {
 
-    &--title {
+    &__title {
         color: white;
         font-size: 4rem;
         font-weight: 600;
@@ -225,12 +230,12 @@ ul.resources-trasition {
         -webkit-text-stroke: 2.5px $red;
     }
 
-    &--option {
+    &__option {
         font-size: 0.8rem;
         color: $black-light;
     }
 
-    &--text {
+    &__text {
         font-size: .9rem;
         font-weight: 600;
         letter-spacing: 0.05rem;
@@ -239,7 +244,7 @@ ul.resources-trasition {
 
 .button {
 
-    &--option {
+    &__option {
         color: $black-light;
         font-size: .75rem;
         text-decoration: none;
@@ -260,14 +265,14 @@ ul.resources-trasition {
 
 .disclaimer {
 
-    &--text {
+    &__text {
         color: $black-light;
         font-size: .9rem;
         line-height: 1.4rem;
         text-align: center;
     }
 
-    &--button {
+    &__button {
         color: $red;
         font-size: .75rem;
         font-weight: 600;

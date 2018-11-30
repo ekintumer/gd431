@@ -1,9 +1,9 @@
 .disclaimer {
-    &--text {
+    &__text {
         @include padding(15px, 20px, 15px, 20px);
     }
 
-    &--button {
+    &__button {
         border-bottom: 2px solid $red;
         @include padding (10px, 5px, 10px, 5px);
         display: inline-block;
@@ -11,7 +11,7 @@
     }
 }
 
-.action {
+.text .action {
     margin-top: 45px;
     margin-bottom: 40px;
     text-align: center;

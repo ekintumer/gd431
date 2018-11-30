@@ -1,5 +1,6 @@
 footer {
     height: 380px;
+    padding: 1px;
     width: auto;
     z-index: 3;
 
@@ -7,6 +8,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         height: 250px;
+        padding: 0;
     }
 
     @media only screen and (min-width: 911px) {
@@ -35,40 +37,30 @@ footer {
         &:hover {
             opacity: 0.6;
             transition: opacity 0.5s ease-in-out;
+            @include size(auto, 100%);
         }
     }
 
     &--facebook {
-        height: 100%;
-        width: auto;
         @include margin(0, 25px, 0, 5px);
     }
 
     &--youtube {
-        height: 100%;
         margin-right: 25px;
-        width: auto;
     }
 
     &--linkedin {
-        height: 100%;
-        width: auto;
         margin-right: 25px;
     }
 
-    &--twitter {
-        height: 100%;
-        width: auto;
-    }
 }
 
 img.logo {
 
     &--warnock {
-        height: 25px;
         margin-bottom: 5px;
         margin-left: 25px;
-        width: auto;
+        @include size(auto, 25px);
     }
 
     &--advocates {

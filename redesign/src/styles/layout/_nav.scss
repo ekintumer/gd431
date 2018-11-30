@@ -2,6 +2,19 @@
     display: none;
 }
 
+nav {
+    counter-reset: site-nav;
+
+    >ul {
+        li>a {
+            &::before {
+                counter-increment: site-nav;
+                content: counter(site-nav, decimal-leading-zero) " . ";
+            }
+        }
+    }
+}
+
 .nav-wrapper {
     position: absolute;
     z-index: 4;
@@ -27,11 +40,10 @@
     &--button {
         background: $red;
         color: #FFFFFF;
-        height: 114px;
         position: fixed;
         right: 0;
         top: 0;
-        width: 104px;
+        @include size(104px, 114px);
 
         &[aria-expanded="true"] {
             background: $yellow;
@@ -66,12 +78,11 @@
         @media screen and (max-width: ($show-nav - 1px)) {
             align-items: flex-end;
             flex-direction: column;
-            height: 0;
             padding: 0;
             position: fixed;
             right: 0;
             top: 114px;
-            width: 320px;
+            @include size(320px, 0);
 
             &[data-visible="true"] {
                 animation: expand 0.3s ease-in-out forwards;
@@ -86,8 +97,7 @@
         @media screen and (min-width: $show-nav) {
             display: flex !important;
             flex-direction: column;
-            height: 452px;
-            width: 300px;
+            @include size(300px, 452px);
             @include padding(20px, 0, 90px, 0);
         }
     }
@@ -97,8 +107,7 @@
         display: flex;
         flex: 1 0 auto;
         margin-bottom: 1px;
-        width: 320px;
-        height: 75px;
+        @include size(320px, 75px);
 
         @media screen and (max-width: ($show-nav - 1px)) {
             justify-content: left;
