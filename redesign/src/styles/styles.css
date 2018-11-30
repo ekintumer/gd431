@@ -81,14 +81,14 @@ a {
   min-height: 100vh;
 }
 
-.main {
+main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 /4;
 }
 
 @media only screen and (min-width: 1000px) {
-  .main {
+  main {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
@@ -99,7 +99,7 @@ a {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main {
+  main {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
@@ -345,7 +345,7 @@ footer {
   width: 40px;
 }
 
-.main {
+main {
   margin-top: 50px;
   margin-right: 4vw;
   margin-bottom: 50px;
@@ -358,7 +358,7 @@ footer {
 }
 
 @media only screen and (min-width: 1000px) {
-  .main {
+  main {
     margin-top: 50px;
     max-width: 55vw;
   }
@@ -371,7 +371,7 @@ footer {
 }
 
 @media only screen and (min-width: 1440px) {
-  .main {
+  main {
     height: 570px;
   }
   .text--header {

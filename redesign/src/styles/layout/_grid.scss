@@ -4,7 +4,7 @@
      min-height: 100vh;
  }
 
- .main {
+ main {
      grid-column: 1 /4;
 
      @media only screen and (min-width: $show-nav) {
