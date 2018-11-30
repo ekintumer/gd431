@@ -1,24 +1,26 @@
-
-<div class= "nav-wrapper">
-	<nav class= "navigation">	
-			<button id="js-menu-button" aria-controls="js-menu" aria-expanded="false" class="u-button-reset menu--button">
+<div class="nav-wrapper">
+	<nav class="navigation">
+		<button id="js-menu-button" aria-controls="js-menu" aria-expanded="false" class="u-button-reset menu--button">
 			<span aria-hidden="true" class="menu-icon">
-				 <div class="menu-icon--line"></div>
-				 <div class="menu-icon--line"></div>
-				 <div class="menu-icon--line"></div>
+				<div class="menu-icon--line"></div>
+				<div class="menu-icon--line"></div>
+				<div class="menu-icon--line"></div>
 			</span>
 		</button>
-		
-		<ul id="js-menu" class="u-unstyled-list menu--list" aria-hidden="false" data-visible="false" >
-		{% for nav in collections.nav %}
-		<li class="menu--text {% if (page.url==nav.url) %}is-active{% endif %}"><a href="{{nav.url}}" class="u-block link">{{nav.data.title}}</a></li>
-		{% endfor %}
+
+		<ul id="js-menu" class="u-unstyled-list menu--list" aria-hidden="false" data-visible="false">
+			{% for nav in collections.nav %}
+			<li class="menu--text {% if (page.url==nav.url) %}is-active{% endif %}"><a href="{{nav.url}}" class="u-block link">{{nav.data.title}}</a></li>
+			{% endfor %}
 		</ul>
 	</nav>
-</div>	
+</div>
 
-			{# <li class="menu--text"><a href="#" target="_self" class="u-block link" >01 . What is expungement?</a></li>
-			<li class="menu--text"><a href="/disclaimer" target="_self" class="u-block link{% if page.url == slug %} active{% endif %}">02 . Can I expunge my record?</a></li>
-			<li class="menu--text"><a href="/resources" target="_self" class="u-block link{% if page.url == slug1 %} active{% endif %}">03 . Resources</a></li>
-			<li class="menu--text"><a href="/faq" target="_self" class="u-block link{% if page.url == slug2 %} active{% endif %}">04 . FAQs</a></li>
-			<li class="menu--text"><a href="#" target="_self" class="u-block link">05 . About us</a></li> #}
+{# <li class="menu--text"><a href="#" target="_self" class="u-block link">01 . What is expungement?</a></li>
+<li class="menu--text"><a href="/disclaimer" target="_self" class="u-block link{% if page.url == slug %} active{% endif %}">02
+		. Can I expunge my record?</a></li>
+<li class="menu--text"><a href="/resources" target="_self" class="u-block link{% if page.url == slug1 %} active{% endif %}">03
+		. Resources</a></li>
+<li class="menu--text"><a href="/faq" target="_self" class="u-block link{% if page.url == slug2 %} active{% endif %}">04
+		. FAQs</a></li>
+<li class="menu--text"><a href="#" target="_self" class="u-block link">05 . About us</a></li> #}

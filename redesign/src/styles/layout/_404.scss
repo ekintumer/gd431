@@ -12,17 +12,17 @@
         @include padding (15px, 50px, 15px, 50px);
         @include margin (15px, 30px, 25px, 30px);
     }
+
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+        transition: all 0.7s ease-in-out;
+    }
 }
 
-a.button--option:hover {
-    border: 1px solid $black;
-    color: $black;
-    transition: all 0.7s ease-in-out;
-}
-
-.error.border {
-    margin-top: 40px;
-}
+// .error.border {
+//     margin-top: 40px;
+// }
 
 .error {
     align-content: center;
@@ -52,6 +52,10 @@ a.button--option:hover {
             left: 340px;
             width: auto;
         }
+    }
+
+    &.border {
+        margin-top: 40px;
     }
 }
 
