@@ -1,41 +1,38 @@
 ---
 layout: layouts/default.njk
-title: 404 
+title: 404
 ---
 
 
-<section class= "site-wrapper">
+<section class="site-wrapper">
 
     <main class="error-page">
-        <button class= "back u-button-reset" onclick="goBack()" type"button">
-            <p class="back--text"> Back </p>
-                <section class="back--icon">
-                <div class="back--arrow"></div> <hr>
-                </section>
-        </button>
-         
+        <button class="back u-button-reset" onclick="goBack()" type"button">Back</button>
+
         <div class="error--title"> 404 </div>
-        <section class="error border u-center"> 
-        <h2 class="error--text">Unfortunately we can’t be of further help to you with this information. </h2>
+        <section class="error border u-center">
+            <h2 class="error--text">Unfortunately we can’t be of further help to you with this information. </h2>
 
             <section class="options u-center">
-                 <div class="options--flex">
-                    <p class="error--option">If you don’t know because you don’t have your official criminal record, you can see the steps to obtaining your arrest information.</p>
-                    <a href="#" class="button--option"> See the steps</a>
-                 </div>
                 <div class="options--flex">
-                     <p class="error--option">If you already have your criminal record, and you still don’t know the answer, you can check out our resources page to find someone who can help you.</p>
-                    <a class="button--option" href="/resources" target="_self" > Resources page 
+                    <p class="error--option">If you don’t know because you don’t have your official criminal record,
+                        you can see the steps to obtaining your arrest information.</p>
+                    <a href="#" class="button--option"> See the steps</a>
+                </div>
+                <div class="options--flex">
+                    <p class="error--option">If you already have your criminal record, and you still don’t know the
+                        answer, you can check out our resources page to find someone who can help you.</p>
+                    <a class="button--option" href="/resources" target="_self"> Resources page
                     </a>
                 </div>
             </section>
 
         </section>
-       <section class="action">
+        <section class="action">
             <a class="disclaimer--button" href="/question_01"> Start over</a>
         </section>
     </main>
 
-{% include "_footer.html" %}
+    {% include "_footer.html" %}
 
 </section>

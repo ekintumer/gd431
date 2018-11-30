@@ -6,9 +6,10 @@
     &--button {
         border-bottom: 2px solid $red;
         @include padding (10px, 5px, 10px, 5px);
+        display: inline-block;
+        text-align: center;
     }
 }
-
 
 .action {
     margin-top: 45px;

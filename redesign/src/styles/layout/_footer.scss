@@ -26,16 +26,18 @@ footer {
 
 .footer {
     &--title {
-        @include margin(30px, 25px, 11px, 25px);
+        @include margin(35px, 25px, 11px, 25px);
     }
 }
 
 .icon {
     display: flex;
 
-    &:hover {
-        opacity: 0.6;
-        transition: opacity 0.5s ease-in-out;
+    &--link {
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.5s ease-in-out;
+        }
     }
 
     &--facebook {

@@ -20,3 +20,5 @@
         j.preventDefault();
     });
 })(jQuery);
+
+//code taken from Srdjan Pajdic / https://codepen.io/MightyShaban/pen/LqrCK

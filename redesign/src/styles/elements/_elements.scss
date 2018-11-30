@@ -3,7 +3,7 @@
     color: #FFFFFF;
 
     &--title {
-        font-size: .9rem;
+        font-size: .85rem;
         letter-spacing: 1.07px;
         text-transform: uppercase;
     }
@@ -194,6 +194,12 @@ ul.resources-trasition {
 
 .numbers {
     font-size: .9rem;
+}
+
+.third {
+    &--name {
+        color: $black;
+    }
 }
 
 //404 page

@@ -107,3 +107,36 @@ a.button--option:hover {
     }
 }
 
+.back {
+    color: $red;
+    font-size: .75rem;
+    font-weight: 600; // these font styles were previously elsewhere in your CSS
+    @include padding (10px, 25px, 10px, 25px);
+    position: relative; // this was an important bit missing from your previous version
+    // without position relative here, the absolutely positioned elements were trying to sort themselves out relative to the whole page -- which is why you needed to do different values for top with media queries
+
+    &::before {
+        // a pseudo element for the arrow
+        // here, I separated out the border style properties
+        // before, you were using the shorthand property, but that meant you had to override it immediately
+        border-color: $red;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        content: ''; // in order to use a pseudo element, you *must* include this property
+        position: absolute;
+        transform: rotate(-135deg); // I only tweaked your rotate a smidge to get things to line up more neatly
+        top: 32px; // notice the smaller top value here because it's relative to the button
+        left: 25px;
+        @include size(10px, 10px);
+    }
+
+    &::after {
+        // this pseudo element uses a small block element with a height of 2px instead of your previous hr element with a border
+        background-color: $red;
+        content: '';
+        position: absolute;
+        top: 36px;
+        left: 26px;
+        @include size(40px, 2px);
+    }
+}
