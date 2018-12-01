@@ -1,9 +1,11 @@
 //tabs
-let accordionTriggers = document.querySelectorAll(".js-accordion__trigger"); // Get all elements with our js-* prefix class as a variable
-let accordionContent = document.querySelectorAll(".js-accordion__content"); // Get all elements with our js-* prefix class as a variable
 
+// Get all elements with our js-* prefix class as a variable
+let accordionTriggers = document.querySelectorAll(".js-accordion__trigger");
+let accordionContent = document.querySelectorAll(".js-accordion__content");
+
+// Add click event to each tab to run the showAccordionContent function
 for (i = 0; i < accordionTriggers.length; i++) {
-    // Add click event to each tab to run the showAccordionContent function
     accordionTriggers[i].addEventListener("click", showAccordionContent);
 }
 

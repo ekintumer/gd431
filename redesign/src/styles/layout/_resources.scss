@@ -1,16 +1,42 @@
 .tabs {
-    border-bottom: 1px solid rgba($color: $red, $alpha: 0.4);
     width: auto;
     left: 0;
     position: relative;
 
     &--button {
         transition: all .2s ease;
-        @include padding(10px, 5px, 10px, 5px);
+        @include padding(10px, 5px, 15px, 5px);
 
         &:hover {
             color: $red;
         }
+
+        &[aria-expanded="true"] {
+            color: $red;
+            border-bottom: 3px solid rgba($color: $red, $alpha: 0.4);
+            transition: all 0.3s ease-in-out;
+            animation: underline 0.4s ease-in-out forwards;
+            // transition: opacity,
+            //     width;
+            // transition-duration: .3s;
+        }
+    }
+
+    @keyframes underline {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+
+    &display:block {
+        color: $red;
+        transition: color 0.3s ease-in;
     }
 }
 
@@ -22,7 +48,12 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: auto;
+    width: 90vw;
+
+    @media only screen and (min-width: $show-nav) {
+        width: 55vw;
+        max-width: 700px;
+    }
 }
 
 .active-marker {
@@ -49,7 +80,7 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 45px;
         text-align: center;
 
         @media only screen and (min-width: $show-nav) {
