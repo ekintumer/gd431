@@ -22,66 +22,66 @@ function showAccordionContent(el) { // Runs when accordion button is clicked
 
 //tab transition
 
-$(document).ready(function () {
-    function moveMarker() {
-        var activeSection = $('.active button');
-        var activewidth = $(activeSection).width();
-        var activePadLeft = parseFloat($(activeSection).css('padding-left'));
-        var activePadRight = parseFloat($(activeSection).css('padding-right'));
-        var totalWidth = activewidth + activePadLeft + activePadRight;
+// $(document).ready(function () {
+//     function moveMarker() {
+//         var activeSection = $('.active button');
+//         var activewidth = $(activeSection).width();
+//         var activePadLeft = parseFloat($(activeSection).css('padding-left'));
+//         var activePadRight = parseFloat($(activeSection).css('padding-right'));
+//         var totalWidth = activewidth + activePadLeft + activePadRight;
 
-        var precedingAnchorWidth = anchorWidthCounter();
+//         var precedingAnchorWidth = anchorWidthCounter();
 
-        // TODO: 
-        // Find the total widths of all of the anchors
-        // to the left of the active anchor.
+//         // TODO: 
+//         // Find the total widths of all of the anchors
+//         // to the left of the active anchor.
 
-        var activeMarker = $('.active-marker');
-        $(activeMarker).css('display', 'block');
+//         var activeMarker = $('.active-marker');
+//         $(activeMarker).css('display', 'block');
 
-        $(activeMarker).css('width', totalWidth);
+//         $(activeMarker).css('width', totalWidth);
 
-        $(activeMarker).css('left', precedingAnchorWidth);
+//         $(activeMarker).css('left', precedingAnchorWidth);
 
-        // TODO: 
-        // Using the calculated total widths of preceding anchors,
-        // Set the left: css value to that number.
-    }
-    moveMarker();
+//         // TODO: 
+//         // Using the calculated total widths of preceding anchors,
+//         // Set the left: css value to that number.
+//     }
+//     moveMarker();
 
-    function anchorWidthCounter() {
-        var anchorWidths = 0;
-        var button;
-        var buttonWidth;
-        var buttonPadLeft;
-        var buttonPadRight;
-        var buttonTotalWidth;
-        $('.tabs li').each(function (index, elem) {
-            var activeTest = $(elem).hasClass('active');
-            if (activeTest) {
-                // Break out of the each function.
-                return false;
-            }
+//     function anchorWidthCounter() {
+//         var anchorWidths = 0;
+//         var button;
+//         var buttonWidth;
+//         var buttonPadLeft;
+//         var buttonPadRight;
+//         var buttonTotalWidth;
+//         $('.tabs li').each(function (index, elem) {
+//             var activeTest = $(elem).hasClass('active');
+//             if (activeTest) {
+//                 // Break out of the each function.
+//                 return false;
+//             }
 
-            button = $(elem).find('button.active');
-            buttonWidth = button.width();
-            buttonPadLeft = parseFloat(button.css('padding-left'));
-            buttonPadRight = parseFloat(button.css('padding-right'));
-            buttonTotalWidth = buttonWidth + buttonPadLeft + buttonPadRight;
+//             button = $(elem).find('button.active');
+//             buttonWidth = button.width();
+//             buttonPadLeft = parseFloat(button.css('padding-left'));
+//             buttonPadRight = parseFloat(button.css('padding-right'));
+//             buttonTotalWidth = buttonWidth + buttonPadLeft + buttonPadRight;
 
-            anchorWidths = anchorWidths + buttonTotalWidth;
-        });
+//             anchorWidths = anchorWidths + buttonTotalWidth;
+//         });
 
-        return anchorWidths;
-    }
+//         return anchorWidths;
+//     }
 
-    $('.tabs button').click(function (e) {
-        e.preventDefault();
-        $('.tabs li').removeClass('active');
-        $(this).parents('li').addClass('active');
-        moveMarker();
-    });
-});
+//     $('.tabs button').click(function (e) {
+//         e.preventDefault();
+//         $('.tabs li').removeClass('active');
+//         $(this).parents('li').addClass('active');
+//         moveMarker();
+//     });
+// });
 
 //referenced from Glenn McComb https://codepen.io/lenymo/pen/jPNGdq
 

@@ -8,10 +8,11 @@
         @include padding (10px, 5px, 10px, 5px);
         display: inline-block;
         text-align: center;
+        align-content: center;
     }
 }
 
-.text .action {
+.action {
     margin-top: 45px;
     margin-bottom: 40px;
     text-align: center;

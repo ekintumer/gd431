@@ -37,6 +37,7 @@
     //404
 
     &__title {
+
         position: absolute;
         text-align: center;
         left: 0;
@@ -45,7 +46,7 @@
         width: auto;
 
         @media only screen and (min-width: $show-nav) {
-            left: 340px;
+            left: 300px;
             width: auto;
         }
     }
