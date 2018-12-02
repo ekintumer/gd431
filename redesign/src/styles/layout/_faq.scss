@@ -28,7 +28,6 @@ main.faq {
 	&__question {
 		cursor: pointer;
 		display: block;
-		user-select: none;
 		width: 90%;
 		@include padding(20px, 0, 20px, 0);
 
