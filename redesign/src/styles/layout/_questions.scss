@@ -1,5 +1,5 @@
 .question {
-    &--text {
+    &__text {
         margin-top: 30px;
         @include padding(0, 20px, 15px, 20px);
 
@@ -21,7 +21,7 @@
     margin-top: 40px;
 }
 
-.answer {
+.button--answer {
     border: 1px solid $grey;
     border-radius: 4px;
     box-sizing: border-box;
@@ -31,12 +31,12 @@
     padding: 15px;
     user-select: contain;
     width: 250px;
-}
 
-a.answer:hover {
-    border: 1px solid $black;
-    color: $black;
-    transition: all 0.7s ease-in-out;
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+        transition: all 0.7s ease-in-out;
+    }
 }
 
 a.red {

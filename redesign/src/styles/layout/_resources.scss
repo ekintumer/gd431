@@ -3,7 +3,7 @@
     left: 0;
     position: relative;
 
-    &--button {
+    &__button {
         transition: all .2s ease;
         @include padding(10px, 5px, 15px, 5px);
 
@@ -16,9 +16,6 @@
             border-bottom: 3px solid rgba($color: $red, $alpha: 0.4);
             transition: all 0.3s ease-in-out;
             animation: underline 0.4s ease-in-out forwards;
-            // transition: opacity,
-            //     width;
-            // transition-duration: .3s;
         }
     }
 
@@ -32,11 +29,6 @@
             width: 100%;
             opacity: 1;
         }
-    }
-
-    &display:block {
-        color: $red;
-        transition: color 0.3s ease-in;
     }
 }
 
@@ -68,7 +60,7 @@
 }
 
 .text {
-    &--first {
+    &__first {
         margin-top: 30px;
 
         @media only screen and (min-width: $show-nav) {
@@ -76,7 +68,7 @@
         }
     }
 
-    &--second {
+    &__second {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -88,7 +80,7 @@
         }
     }
 
-    &--third {
+    &__third {
         margin-top: 35px;
 
         @media only screen and (min-width: $show-nav) {
@@ -98,11 +90,11 @@
 }
 
 .first {
-    &--header {
+    &__header {
         margin-top: 40px;
     }
 
-    &--answer.more {
+    &__answer.more {
         margin-bottom: 15px;
     }
 }
@@ -137,28 +129,6 @@
 
 //second tab
 
-.button {
-    &--resource {
-        border: 1px solid $grey;
-        border-radius: 4px;
-        box-sizing: border-box;
-        color: $black-light;
-        cursor: pointer;
-        font-size: .8rem;
-        margin-bottom: 25px;
-        padding: 15px;
-        user-select: none;
-        text-decoration: none;
-        width: 250px;
-    }
-}
-
-a.button--resource:hover {
-    border: 1px solid $black;
-    color: $black;
-    transition: all 0.7s ease-in-out;
-}
-
 button.text--tabs {
     padding: 10px;
 }
@@ -166,12 +136,12 @@ button.text--tabs {
 // third tab
 
 .third {
-    &--name {
+    &__name {
         display: block;
         margin-bottom: 5.2px;
     }
 
-    &--number {
+    &__number {
         display: block;
         margin: 0;
     }

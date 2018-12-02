@@ -1,23 +1,20 @@
 .footer {
     background: #212121;
     color: #FFFFFF;
+    font-size: .75rem;
+    letter-spacing: .5px;
+    font-weight: 300;
 
     &--title {
-        font-size: .85rem;
         letter-spacing: 1.07px;
         text-transform: uppercase;
     }
 
     &--text {
-        font-size: .85rem;
-        letter-spacing: 0;
         opacity: 0.7;
     }
 
     &--link {
-        color: #FFFFFF;
-        font-size: .85rem;
-        letter-spacing: 0;
         opacity: 0.7;
         text-decoration: none;
         transition: color 0.3s ease-in-out;
@@ -48,7 +45,7 @@ ul.resources-trasition {
         line-height: 1.5rem;
     }
 
-    &--header {
+    &__header {
         color: $black;
         font-size: 1rem;
         letter-spacing: 0.05rem;
@@ -58,7 +55,7 @@ ul.resources-trasition {
 
     //resources
 
-    &--tabs {
+    &__tabs {
         display: inline-block;
         margin: 0;
 
@@ -121,13 +118,13 @@ ul.resources-trasition {
 // faq
 
 .js-faq {
-    &--question {
+    &__question {
         color: $red;
         font-size: .87rem;
         text-align: left;
     }
 
-    &--answer {
+    &__answer {
         color: $black-light;
         font-size: .87rem;
         letter-spacing: .02rem;
@@ -143,13 +140,12 @@ ul.resources-trasition {
         text-decoration: underline;
         transition: all .3s ease-in-out;
     }
-
 }
 
 // resources page
 
 .tabs {
-    &--button {
+    &__button {
         font-size: .8rem;
         line-height: 16px;
         text-decoration: none;
@@ -164,14 +160,14 @@ ul.resources-trasition {
 //first tab
 
 .first {
-    &--answer {
+    &__answer {
         color: $black-light;
         font-size: .87rem;
         letter-spacing: .02rem;
         line-height: 25px;
     }
 
-    &--header {
+    &__header {
         color: $black;
         font-size: .87rem;
     }
@@ -207,7 +203,7 @@ ul.resources-trasition {
 }
 
 .third {
-    &--name {
+    &__name {
         color: $black;
     }
 }
@@ -243,11 +239,15 @@ ul.resources-trasition {
 }
 
 .button {
+    color: $black-light;
+    font-size: .75rem;
+    text-decoration: none;
 
-    &__option {
-        color: $black-light;
-        font-size: .75rem;
+    &--answer {
+        text-align: center;
         text-decoration: none;
+        color: #212121;
+        font-size: .8rem;
     }
 }
 
@@ -284,17 +284,10 @@ ul.resources-trasition {
 
 .question {
 
-    &--text {
+    &__text {
         color: $black-light;
         font-size: .9rem;
         line-height: 1.4rem;
         text-align: center;
     }
-}
-
-.answer {
-    text-align: center;
-    text-decoration: none;
-    color: #212121;
-    font-size: .8rem;
 }

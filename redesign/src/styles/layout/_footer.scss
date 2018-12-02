@@ -1,4 +1,4 @@
-footer {
+.footer {
     height: 380px;
     padding: 1px;
     width: auto;
@@ -22,9 +22,7 @@ footer {
         width: 100%;
         z-index: 4;
     }
-}
 
-.footer {
     &--title {
         @include margin(35px, 25px, 11px, 25px);
     }
@@ -55,15 +53,14 @@ footer {
 
 }
 
-img.logo {
-
-    &--warnock {
+.logo {
+    &__warnock {
         margin-bottom: 5px;
         margin-left: 25px;
         @include size(auto, 25px);
     }
 
-    &--advocates {
+    &__advocates {
         height: 35px;
         margin-left: 20px;
     }

@@ -1,9 +1,9 @@
  .site-wrapper {
+     align-content: center;
      display: grid;
      grid-template-columns: 300px auto auto;
-     min-height: 100vh;
      left: 300px;
-     align-content: center;
+     min-height: 100vh;
 
      @media only screen and (min-width: $show-nav) {
          grid-template-rows: repeat(2, 1fr);
