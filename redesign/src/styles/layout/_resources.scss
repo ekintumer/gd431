@@ -1,7 +1,7 @@
 .tabs {
-    width: auto;
     left: 0;
     position: relative;
+    width: auto;
 
     &__button {
         transition: all .2s ease;
@@ -9,13 +9,13 @@
 
         &:hover {
             color: $red;
+            transition: all 0.3s ease-in-out;
         }
 
         &[aria-expanded="true"] {
+            animation: underline 0.4s ease-in-out forwards;
             color: $red;
             border-bottom: 3px solid rgba($color: $red, $alpha: 0.4);
-            transition: all 0.3s ease-in-out;
-            animation: underline 0.4s ease-in-out forwards;
         }
     }
 
@@ -33,18 +33,18 @@
 }
 
 .resources-transition {
-    padding: 0;
-    margin: 0;
-    left: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    left: 0;
+    margin: 0;
+    padding: 0;
     width: 90vw;
 
     @media only screen and (min-width: $show-nav) {
-        width: 55vw;
         max-width: 700px;
+        width: 55vw;
     }
 }
 
@@ -53,10 +53,10 @@
     bottom: 0;
     display: block;
     height: 3.5px;
-    position: absolute;
-    width: auto;
     left: 0;
+    position: absolute;
     transition: all .4s cubic-bezier(.25, .25, .25, 1.15);
+    width: auto;
 }
 
 .text {

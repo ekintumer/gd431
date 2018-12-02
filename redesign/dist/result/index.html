@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/styles.css">
-    <title> Result | Expunge Maryland |  Expunge Maryland </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <title> Result | Expunge Maryland |  Expunge Maryland </title>
 </head>
 
 <body>
-<div class="nav-wrapper">
+  <div class="nav-wrapper">
 	<nav class="navigation">
 		<button id="js-menu-button" aria-controls="js-menu" aria-expanded="false" class="u-button-reset menu__button">
 			<span aria-hidden="true" class="menu-icon">
@@ -20,7 +20,6 @@
 				<div class="menu-icon__line"></div>
 			</span>
 		</button>
-
 		<ul id="js-menu" class="u-unstyled-list menu__list" aria-hidden="false" data-visible="false">
 			
 			<li class="menu__text "><a href="/faq/" class="u-block link">FAQ</a></li>
@@ -37,34 +36,38 @@
 	</nav>
 </div>
 
-
-
-<header class="sticky image">
+  <header class="sticky image">
     <a href="/index.html"><img class="logo__expunge" src="/images/logo--expunge.svg" alt="Expunge Maryland logo."></a>
 </header>
 
+  <section class="site-wrapper">
 
+    
+<main>
+    <h1 class="text__header u-center u-bold u-add-margin">Great!</h1>
+    <section class="question result">
+        <p class="disclaimer__text u-remove-margin result">Based on your answers you’ve provided, you can likely
+            expunge your case!</p>
+        <p class="disclaimer__text u-remove-margin result">We have partnered with the Maryland Volunteer Lawyers
+            Service (MVLS) to help you on your way toward expungement. Click the button below to begin.</p>
+    </section>
 
-<section class="site-wrapper">
-    <main>
-        <h1 class="text__header u-center u-bold u-add-margin">Great!</h1>
-        <section class="question result">
-            <p class="disclaimer__text u-remove-margin result">Based on your answers you’ve provided, you can likely
-                expunge your case!</p>
-            <p class="disclaimer__text u-remove-margin result">We have partnered with the Maryland Volunteer Lawyers
-                Service (MVLS) to help you on your way toward expungement. Click the button below to begin.</p>
-        </section>
+    <section class="answers">
+        <a class="button--answer" target="_blank" href="https://mvlslaw.org/get-legal-help/">Start the Process with
+            MLVS</a>
+    </section>
 
-        <section class="answers">
-            <a class="button--answer" target="_blank" href="https://mvlslaw.org/get-legal-help/">Start the Process with
-                MLVS</a>
-        </section>
+    <section class="action result">
+        <a class="disclaimer__button" href="/question_01"> Start over</a>
+    </section>
+</main>
 
-        <section class="action result">
-            <a class="disclaimer__button" href="/question_01"> Start over</a>
-        </section>
-    </main>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/faq.js"></script>
+    <script src="/js/resources.js"></script>
+    <script src="/js/back.js"></script>
     <footer class="footer">
     <div class="contact">
         <h3 class="footer--title ">Contact</h3>
@@ -96,17 +99,7 @@
     </div>
 </footer>
 
-
-</section>
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<script src="/js/menu.js"></script>
-<script src="/js/faq.js"></script>
-<script src="/js/resources.js"></script>
-<script src="/js/back.js"></script>
+  </section>
 </body>
 
 </html>

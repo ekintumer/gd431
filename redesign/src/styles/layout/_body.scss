@@ -1,6 +1,6 @@
 main {
-    @include margin(50px, auto, 50px, auto);
     max-width: 90vw;
+    @include margin(50px, auto, 50px, auto);
 
     @media only screen and (min-width: $show-nav) {
         margin-top: 50px;

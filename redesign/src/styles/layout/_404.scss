@@ -10,8 +10,8 @@
     cursor: pointer;
     user-select: none;
     width: 250px;
-    @include padding (15px, 50px, 15px, 50px);
     @include margin (15px, 30px, 15px, 30px);
+    @include padding (15px, 50px, 15px, 50px);
 
     &:hover {
         border: 1px solid $black;
@@ -37,12 +37,11 @@
     //404
 
     &__title {
-
-        position: absolute;
-        text-align: center;
         left: 0;
-        right: 0;
         margin: auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
         width: auto;
 
         @media only screen and (min-width: $show-nav) {
@@ -68,8 +67,8 @@
 }
 
 .back {
-    @include padding (10px, 25px, 25px, 25px);
     position: relative;
+    @include padding (10px, 25px, 25px, 25px);
 
     &::before {
         border-color: $red;
@@ -77,8 +76,8 @@
         border-width: 2px 2px 0 0;
         content: '';
         position: absolute;
-        transform: rotate(-135deg);
         top: 32px;
+        transform: rotate(-135deg);
         left: 25px;
         @include size(10px, 10px);
     }
@@ -86,9 +85,9 @@
     &::after {
         background-color: $red;
         content: '';
+        left: 26px;
         position: absolute;
         top: 36px;
-        left: 26px;
         @include size(40px, 2px);
     }
 }

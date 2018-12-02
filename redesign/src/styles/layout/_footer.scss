@@ -1,8 +1,7 @@
 .footer {
-    height: 380px;
     padding: 1px;
-    width: auto;
     z-index: 3;
+    @include size(auto, 380px);
 
     @media only screen and (min-width: 620px) {
         display: flex;
@@ -50,7 +49,6 @@
     &--linkedin {
         margin-right: 25px;
     }
-
 }
 
 .logo {

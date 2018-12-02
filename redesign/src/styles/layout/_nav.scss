@@ -97,8 +97,8 @@ nav {
         @media screen and (min-width: $show-nav) {
             display: flex !important;
             flex-direction: column;
-            @include size(300px, 452px);
             @include padding(20px, 0, 90px, 0);
+            @include size(300px, 452px);
         }
     }
 
@@ -114,8 +114,8 @@ nav {
         }
 
         >a {
-            width: 320px;
             transition: background 0.3s ease-in-out;
+            width: 320px;
 
             &:hover {
                 background: $red-dark;

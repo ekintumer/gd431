@@ -3,21 +3,16 @@ layout: layouts/default.njk
 title: Question 2
 ---
 
-<section class="site-wrapper">
-    <main>
-        <button class="back u-button-reset" onclick="goBack()" type="button">Back</button>
+<main>
+    <button class="back u-button-reset" onclick="goBack()" type="button">Back</button>
 
-        <section class="question">
-            <p class="question__text">Were you 18 or older when the incident occurred?</p>
-        </section>
+    <section class="question">
+        <p class="question__text">Were you 18 or older when the incident occurred?</p>
+    </section>
 
-        <section class="answers">
-            <a class="button--answer" href="/result">Yes</a>
-            <a class="button--answer" href="/question_03">No</a>
-            <a class="button--answer red" href="/404">I don't know</a>
-        </section>
-    </main>
-
-    {% include "_footer.html" %}
-
-</section>
+    <section class="answers">
+        <a class="button--answer" href="/result">Yes</a>
+        <a class="button--answer" href="/question_03">No</a>
+        <a class="button--answer red" href="/404">I don't know</a>
+    </section>
+</main>

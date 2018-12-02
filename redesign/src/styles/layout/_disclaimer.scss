@@ -2,20 +2,23 @@
     &__text {
         @include padding(15px, 20px, 15px, 20px);
     }
-
-    &__button {
-        border-bottom: 2px solid $red;
-        @include padding (10px, 5px, 10px, 5px);
-        display: inline-block;
-        text-align: center;
-        align-content: center;
-    }
 }
 
 .action {
     margin-top: 45px;
     margin-bottom: 40px;
     text-align: center;
+
+    >a {
+        border-bottom: 2px solid $red;
+        display: inline-block;
+        text-align: center;
+        @include padding (10px, 5px, 10px, 5px);
+
+        &:hover {
+            border-bottom: 2px solid $red-dark;
+        }
+    }
 }
 
 .border.disclaimer {

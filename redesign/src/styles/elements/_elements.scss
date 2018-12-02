@@ -22,10 +22,6 @@
         &:hover {
             color: $grey;
         }
-
-        &:visited {
-            color: #FFFFFF;
-        }
     }
 }
 
@@ -39,8 +35,8 @@ ul.resources-trasition {
 
 .text {
     &--main {
-        font-size: .8rem;
         color: $black;
+        font-size: .8rem;
         letter-spacing: 0.08rem;
         line-height: 1.5rem;
     }
@@ -91,15 +87,10 @@ ul.resources-trasition {
         text-indent: 40px;
 
         @media screen and (min-width: $show-nav) {
-            font-size: .8rem;
+            font-size: .85rem;
             line-height: 70px;
             margin: 0;
             @include size(300px, 45px);
-        }
-
-        @media screen and (max-width: 1440px) {
-            font-size: .9rem;
-            letter-spacing: .08rem;
         }
     }
 }
@@ -146,10 +137,10 @@ ul.resources-trasition {
 
 .tabs {
     &__button {
+        color: rgba($color: $red, $alpha: 0.4);
         font-size: .8rem;
         line-height: 16px;
         text-decoration: none;
-        color: rgba($color: $red, $alpha: 0.4);
     }
 }
 
@@ -227,8 +218,8 @@ ul.resources-trasition {
     }
 
     &__option {
-        font-size: 0.8rem;
         color: $black-light;
+        font-size: 0.8rem;
     }
 
     &__text {
@@ -244,10 +235,9 @@ ul.resources-trasition {
     text-decoration: none;
 
     &--answer {
-        text-align: center;
-        text-decoration: none;
-        color: #212121;
+        color: $black;
         font-size: .8rem;
+        text-align: center;
     }
 }
 
@@ -271,13 +261,6 @@ ul.resources-trasition {
         line-height: 1.4rem;
         text-align: center;
     }
-
-    &__button {
-        color: $red;
-        font-size: .75rem;
-        font-weight: 600;
-        text-decoration: none;
-    }
 }
 
 //questions page
@@ -289,5 +272,18 @@ ul.resources-trasition {
         font-size: .9rem;
         line-height: 1.4rem;
         text-align: center;
+    }
+}
+
+.action {
+    >a {
+        color: $red;
+        font-size: .75rem;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            color: $red-dark;
+        }
     }
 }
