@@ -165,26 +165,12 @@ ul.resources-trasition {
 }
 
 .js-more {
-
-    &--first,
-    &--second,
-    &--third,
-    &--fourth,
-    &--fifth {
-        margin: 0;
-    }
+    margin: 0;
 }
 
 .js-toggle {
-
-    &--first,
-    &--second,
-    &--third,
-    &--fourth,
-    &--fifth {
-        color: $red;
-        font-size: .85rem;
-    }
+    color: $red;
+    font-size: .85rem;
 }
 
 // third tab 

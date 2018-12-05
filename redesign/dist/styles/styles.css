@@ -716,6 +716,9 @@ p.result {
 }
 
 .tabs__button {
+  display: block;
+  position: relative;
+  text-decoration: none;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
   padding-top: 10px;
@@ -724,17 +727,26 @@ p.result {
   padding-left: 5px;
 }
 
-.tabs__button:hover {
-  color: #981E32;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.tabs__button::after {
+  border: 2px solid transparent;
+  content: '';
+  margin: auto;
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 0;
 }
 
-.tabs__button[aria-expanded="true"] {
-  -webkit-animation: underline 0.4s ease-in-out forwards;
-          animation: underline 0.4s ease-in-out forwards;
+.tabs__button[aria-expanded=true], .tabs__button:hover {
   color: #981E32;
-  border-bottom: 3px solid rgba(152, 30, 50, 0.4);
+}
+
+.tabs__button[aria-expanded=true]::after, .tabs__button:hover::after {
+  border-bottom-color: #981E32;
+  width: 100%;
 }
 
 @-webkit-keyframes underline {
@@ -846,11 +858,11 @@ p.result {
   margin-bottom: 15px;
 }
 
-.js-more--first, .js-more--second, .js-more--third, .js-more--fourth, .js-more--fifth {
+.js-more {
   display: none;
 }
 
-.js-toggle--first, .js-toggle--second, .js-toggle--third, .js-toggle--fourth, .js-toggle--fifth {
+.js-toggle {
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1143,11 +1155,11 @@ ul.resources-trasition {
   font-size: .87rem;
 }
 
-.js-more--first, .js-more--second, .js-more--third, .js-more--fourth, .js-more--fifth {
+.js-more {
   margin: 0;
 }
 
-.js-toggle--first, .js-toggle--second, .js-toggle--third, .js-toggle--fourth, .js-toggle--fifth {
+.js-toggle {
   color: #981E32;
   font-size: .85rem;
 }

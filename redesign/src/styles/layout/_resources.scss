@@ -4,18 +4,33 @@
     width: auto;
 
     &__button {
+        display: block;
+        position: relative;
+        text-decoration: none;
+
         transition: all .2s ease;
         @include padding(10px, 5px, 15px, 5px);
 
-        &:hover {
-            color: $red;
-            transition: all 0.3s ease-in-out;
+        &::after {
+            border: 2px solid transparent;
+            content: '';
+            margin: auto;
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            transition: width 0.2s ease-in;
+            width: 0;
         }
 
-        &[aria-expanded="true"] {
-            animation: underline 0.4s ease-in-out forwards;
+        &[aria-expanded=true],
+        &:hover {
             color: $red;
-            border-bottom: 3px solid rgba($color: $red, $alpha: 0.4);
+
+            &::after {
+                border-bottom-color: $red;
+                width: 100%;
+            }
         }
     }
 
@@ -102,28 +117,14 @@
 //read more 
 
 .js-more {
-
-    &--first,
-    &--second,
-    &--third,
-    &--fourth,
-    &--fifth {
-        display: none;
-    }
+    display: none;
 }
 
 .js-toggle {
-
-    &--first,
-    &--second,
-    &--third,
-    &--fourth,
-    &--fifth {
-        border: none;
-        box-sizing: border-box;
-        cursor: pointer;
-        @include padding(10px, 0, 10px, 0);
-    }
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include padding(10px, 0, 10px, 0);
 }
 
 //second tab
