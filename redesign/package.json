@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve --watch",
-    "build": "eleventy"
+    "build": "eleventy",
+    "concat": "cat src/js/back.js src/js/menu.js > src/js/scripts.js"
   },
   "keywords": [],
   "author": "",

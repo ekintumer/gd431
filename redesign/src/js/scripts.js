@@ -1,3 +1,6 @@
+function goBack() {
+    window.history.back();
+}
 //nav
 
 var menuTrigger = document.getElementById("js-menu-button");
