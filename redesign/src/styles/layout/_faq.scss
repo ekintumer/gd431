@@ -1,0 +1,52 @@
+main.faq {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.accordion {
+	border-top: 1px solid $red;
+	max-width: 700px;
+	padding: 0;
+	@include margin(35px, 0, 20px, 0);
+
+	@media only screen and (min-width: $show-nav) {
+		padding-bottom: 150px;
+	}
+}
+
+.js-faq {
+	&__list {
+		border-bottom: 1px solid $red;
+		position: relative;
+	}
+
+	&__answer {
+		display: none;
+		padding: 10px 25px 30px;
+	}
+
+	&__question {
+		cursor: pointer;
+		display: block;
+		width: 90%;
+		@include padding(20px, 0, 20px, 0);
+
+		&:after {
+			border-bottom: 1px solid $red;
+			border-right: 1px solid $red;
+			content: " ";
+			margin-top: 6px;
+			position: absolute;
+			right: 10px;
+			top: 17px;
+			transform: rotate(-45deg);
+			transition: all 0.2s ease-in-out;
+			@include size(8px, 8px);
+		}
+	}
+}
+
+button.active:after {
+	transform: rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,28 @@
+main {
+    max-width: 90vw;
+    @include margin(50px, auto, 50px, auto);
+
+    @media only screen and (min-width: $show-nav) {
+        margin-top: 50px;
+        max-width: 55vw;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        height: 570px;
+    }
+}
+
+.text {
+    &__header {
+        margin-bottom: 30px;
+
+        @media only screen and (min-width: $show-nav) {
+            @include margin(15px, 0, 15px, 0);
+        }
+
+        @media only screen and (min-width: 1440px) {
+            font-size: 1.8rem;
+            @include margin(15px, 0, 25px, 0);
+        }
+    }
+}

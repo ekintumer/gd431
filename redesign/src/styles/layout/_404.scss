@@ -1,0 +1,92 @@
+.main.error-page {
+    margin-bottom: 160px;
+}
+
+.button {
+    border: 1px solid $grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $black-light;
+    cursor: pointer;
+    width: 250px;
+    @include margin (15px, 30px, 15px, 30px);
+    @include padding (15px, 50px, 15px, 50px);
+
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+        transition: all 0.7s ease-in-out;
+    }
+}
+
+.error {
+    align-content: center;
+    margin-top: 40px;
+    @include padding (15px, 25px, 30px, 25px);
+
+    &__text {
+        margin-top: 40px;
+    }
+
+    &__option {
+        width: 265px;
+        @include margin (30px, auto, 35px, auto);
+    }
+
+    //404
+
+    &__title {
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        width: auto;
+
+        @media only screen and (min-width: $show-nav) {
+            left: 300px;
+            width: auto;
+        }
+    }
+
+    &.border {
+        margin-top: 40px;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &--flex {
+        margin-bottom: 30px;
+    }
+}
+
+.back {
+    position: relative;
+    @include padding (10px, 25px, 25px, 25px);
+
+    &::before {
+        border-color: $red;
+        border-style: solid;
+        border-width: 2px 2px 0 0;
+        content: '';
+        position: absolute;
+        top: 32px;
+        transform: rotate(-135deg);
+        left: 25px;
+        @include size(10px, 10px);
+    }
+
+    &::after {
+        background-color: $red;
+        content: '';
+        left: 26px;
+        position: absolute;
+        top: 36px;
+        @include size(40px, 2px);
+    }
+}

@@ -1,0 +1,152 @@
+[data-visible="false"] {
+    display: none;
+}
+
+nav {
+    counter-reset: site-nav;
+
+    >ul {
+        li>a {
+            &::before {
+                counter-increment: site-nav;
+                content: counter(site-nav, decimal-leading-zero) " . ";
+            }
+        }
+    }
+}
+
+.nav-wrapper {
+    position: absolute;
+    z-index: 4;
+
+    @media screen and (min-width: $show-nav) {
+        height: 100%;
+        position: fixed;
+        top: 115px;
+        z-index: 3;
+    }
+}
+
+.navigation {
+    position: relative;
+
+    @media screen and (min-width: $show-nav) {
+        background-color: $red;
+        height: 100%;
+    }
+}
+
+.menu {
+    &__button {
+        background: $red;
+        color: #FFFFFF;
+        position: fixed;
+        right: 0;
+        top: 0;
+        @include size(104px, 114px);
+
+        &[aria-expanded="true"] {
+            background: $yellow;
+            transition: background 0.3s ease-in-out;
+        }
+
+        &[aria-expanded="true"] {
+            .menu-icon__line {
+                $yValue: 18px;
+                $deg: 45deg;
+
+                &:nth-child(1) {
+                    transform: translateY($yValue) rotate($deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-$yValue) rotate(-$deg);
+                }
+            }
+        }
+
+        @media screen and (min-width: $show-nav) {
+            display: none;
+        }
+    }
+
+    &__list {
+        @media screen and (max-width: ($show-nav - 1px)) {
+            align-items: flex-end;
+            flex-direction: column;
+            padding: 0;
+            position: fixed;
+            right: 0;
+            top: 114px;
+            @include size(320px, 0);
+
+            &[data-visible="true"] {
+                animation: expand 0.4s ease-in-out forwards;
+                display: flex;
+            }
+
+            @media screen and (max-width: ($show-nav - 1px)) {
+                background-color: white;
+            }
+        }
+
+        @media screen and (min-width: $show-nav) {
+            display: flex !important;
+            flex-direction: column;
+            @include padding(20px, 0, 90px, 0);
+            @include size(300px, 452px);
+        }
+    }
+
+    &__text {
+        background: $red;
+        display: flex;
+        flex: 1 0 auto;
+        margin-bottom: 1px;
+        @include size(320px, 75px);
+
+        @media screen and (max-width: ($show-nav - 1px)) {
+            justify-content: left;
+        }
+
+        >a {
+            transition: background 0.3s ease-in-out;
+            width: 320px;
+
+            &:hover {
+                background: $red-dark;
+                color: white;
+            }
+
+            @media screen and (max-width: ($show-nav - 1px)) {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    @keyframes expand {
+        from {
+            height: 0;
+            opacity: 0;
+        }
+
+        to {
+            height: 375px;
+            opacity: 1;
+        }
+    }
+}
+
+.menu-icon {
+    &__line {
+        background-color: white;
+        height: 3px;
+        margin: 10px auto 15px;
+        transition: all 0.3s ease-in-out;
+        width: 40px;
+    }
+}

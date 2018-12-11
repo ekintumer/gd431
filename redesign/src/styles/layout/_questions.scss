@@ -1,0 +1,56 @@
+.question {
+    &__text {
+        margin-top: 30px;
+        @include padding(0, 20px, 15px, 20px);
+
+        @media only screen and (min-width: $show-nav) {
+            margin-top: 5px;
+        }
+    }
+}
+
+.question.border {
+    margin-top: 40px;
+    @include padding(15px, 20px, 15px, 20px);
+}
+
+.answers {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.button--answer {
+    border: 1px solid $grey;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $black-light;
+    cursor: pointer;
+    margin-bottom: 25px;
+    padding: 15px;
+    width: 250px;
+
+    &:hover {
+        border: 1px solid $black;
+        color: $black;
+        transition: all 0.7s ease-in-out;
+    }
+}
+
+a.red {
+    border: 1px solid $red;
+    color: $red;
+}
+
+p.result {
+    padding: 5px;
+}
+
+.action.result {
+    margin-top: 10px;
+}
+
+.border.result {
+    margin-top: 20px;
+}

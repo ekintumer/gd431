@@ -1,0 +1,69 @@
+.footer {
+    padding: 1px;
+    z-index: 3;
+    @include size(auto, 380px);
+
+    @media only screen and (min-width: 620px) {
+        display: flex;
+        flex-wrap: wrap;
+        height: 250px;
+        padding: 0;
+    }
+
+    @media only screen and (min-width: 911px) {
+        bottom: 0;
+        height: 130px;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1000px) {
+        position: fixed;
+        width: 100%;
+        z-index: 4;
+    }
+
+    &--title {
+        @include margin(35px, 25px, 11px, 25px);
+    }
+}
+
+.icon {
+    display: flex;
+
+    &--link {
+        &:hover {
+            opacity: 0.6;
+            transition: opacity 0.5s ease-in-out;
+            @include size(auto, 100%);
+        }
+    }
+
+    &--facebook {
+        @include margin(0, 25px, 0, 5px);
+    }
+
+    &--youtube {
+        margin-right: 25px;
+    }
+
+    &--linkedin {
+        margin-right: 25px;
+    }
+}
+
+.logo {
+    &__warnock {
+        margin-bottom: 5px;
+        margin-left: 25px;
+        @include size(auto, 25px);
+    }
+
+    &__advocates {
+        height: 35px;
+        margin-left: 20px;
+    }
+}
+
+.sponsors {
+    margin-right: 30px;
+}

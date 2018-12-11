@@ -1,0 +1,16 @@
+<div class="nav-wrapper">
+	<nav class="navigation">
+		<button id="js-menu-button" aria-controls="js-menu" aria-expanded="false" class="u-button-reset menu__button">
+			<span aria-hidden="true" class="menu-icon">
+				<div class="menu-icon__line"></div>
+				<div class="menu-icon__line"></div>
+				<div class="menu-icon__line"></div>
+			</span>
+		</button>
+		<ul id="js-menu" class="u-unstyled-list menu__list" aria-hidden="false" data-visible="false">
+			{% for nav in collections.nav %}
+			<li class="menu__text {% if (page.url==nav.url) %}is-active{% endif %}"><a href="{{nav.url}}" class="u-block link">{{nav.data.title}}</a></li>
+			{% endfor %}
+		</ul>
+	</nav>
+</div>

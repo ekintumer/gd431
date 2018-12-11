@@ -1,0 +1,26 @@
+.disclaimer {
+    &__text {
+        @include padding(15px, 20px, 15px, 20px);
+    }
+}
+
+.action {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    >a {
+        border-bottom: 2px solid $red;
+        display: inline-block;
+        text-align: center;
+        @include padding (10px, 5px, 10px, 5px);
+
+        &:hover {
+            border-bottom: 2px solid $red-dark;
+        }
+    }
+}
+
+.border.disclaimer {
+    margin-top: 40px;
+}

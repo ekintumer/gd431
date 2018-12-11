@@ -1,0 +1,39 @@
+.u-bold {
+    font-weight: 700;
+}
+
+.u-add-margin {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.u-remove-margin {
+    margin: 0;
+}
+
+.u-unstyled-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.u-block {
+    display: block;
+}
+
+.u-button-reset {
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+.u-border-reset {
+    border: none !important;
+    padding: 0 !important;
+}
+
+.u-center {
+    text-align: center;
+}

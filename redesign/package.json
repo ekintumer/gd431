@@ -1,0 +1,17 @@
+{
+  "name": "redesign",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve --watch",
+    "build": "eleventy",
+    "concat": "cat src/js/back.js src/js/menu.js > src/js/scripts.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.5.4"
+  }
+}

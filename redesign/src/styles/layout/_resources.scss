@@ -1,0 +1,168 @@
+.tabs {
+    left: 0;
+    position: relative;
+    width: auto;
+
+    &__button {
+        display: block;
+        position: relative;
+        text-decoration: none;
+
+        transition: all .2s ease;
+        @include padding(10px, 5px, 15px, 5px);
+
+        &::after {
+            border: 2px solid transparent;
+            content: '';
+            margin: auto;
+            position: absolute;
+            right: 0;
+            bottom: -1px;
+            left: 0;
+            transition: width 0.2s ease-in;
+            width: 0;
+        }
+
+        &[aria-expanded=true],
+        &:hover {
+            color: $red;
+
+            &::after {
+                border-bottom-color: $red;
+                width: 100%;
+            }
+        }
+    }
+
+    @keyframes underline {
+        from {
+            width: 0;
+            opacity: 0;
+        }
+
+        to {
+            width: 100%;
+            opacity: 1;
+        }
+    }
+}
+
+.resources-transition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 90vw;
+
+    @media only screen and (min-width: $show-nav) {
+        max-width: 700px;
+        width: 55vw;
+    }
+}
+
+.active-marker {
+    background: $red;
+    bottom: 0;
+    display: block;
+    height: 3.5px;
+    left: 0;
+    position: absolute;
+    transition: all .4s cubic-bezier(.25, .25, .25, 1.15);
+    width: auto;
+}
+
+.text {
+    &__first {
+        margin-top: 30px;
+
+        @media only screen and (min-width: $show-nav) {
+            padding-bottom: 150px;
+        }
+    }
+
+    &__second {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 45px;
+        text-align: center;
+
+        @media only screen and (min-width: $show-nav) {
+            padding-bottom: 150px;
+        }
+    }
+
+    &__third {
+        margin-top: 35px;
+
+        @media only screen and (min-width: $show-nav) {
+            padding-bottom: 130px;
+        }
+    }
+}
+
+.first {
+    &__header {
+        margin-top: 40px;
+    }
+
+    &__answer.more {
+        margin-bottom: 15px;
+    }
+}
+
+//read more 
+
+.js-more {
+    display: none;
+}
+
+.js-toggle {
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    @include padding(10px, 0, 10px, 0);
+}
+
+//second tab
+
+button.text--tabs {
+    padding: 10px;
+}
+
+// third tab
+
+.third {
+    &__name {
+        display: block;
+        margin-bottom: 5.2px;
+    }
+
+    &__number {
+        display: block;
+        margin: 0;
+    }
+}
+
+.numbers {
+    border-bottom: 1px solid $grey;
+    font-size: .9rem;
+    padding-bottom: 10px;
+    @include margin(15px, 15px, 15px, 15px);
+}
+
+@media (min-width: 660px) {
+    .numbers {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.border {
+    border: 1px solid $grey;
+    border-radius: 5px;
+    @include margin(0, auto, 0, 0);
+}

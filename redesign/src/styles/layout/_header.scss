@@ -1,0 +1,34 @@
+.logo__expunge {
+    position: fixed;
+    z-index: 2;
+    @include margin(25px, 0, 0, 25px);
+}
+
+.sticky {
+    background-image: url('../images/image--main.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: -85px;
+    z-index: 1;
+    @include size(100%, 200px);
+
+    @media only screen and (min-width: 620px) {
+        background-position-x: -1px;
+        background-position-y: -200px;
+        height: 115px;
+        top: 0;
+    }
+
+    @media only screen and (min-width: $show-nav) {
+        background-position-y: -265px;
+    }
+
+    @media only screen and (min-width: 1280px) {
+        background-position-y: -320px;
+    }
+
+    @media only screen and (min-width: 1440px) {
+        background-position-y: -400px;
+    }
+}

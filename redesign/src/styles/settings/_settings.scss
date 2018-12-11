@@ -1,0 +1,32 @@
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
